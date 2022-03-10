@@ -1,4 +1,5 @@
 const os = require('os')
+const log = require('./logger.js')
 
 setInterval(() => {
     const memo = parseInt(os.freemem() / 1024 / 1024)
@@ -12,5 +13,7 @@ setInterval(() => {
     }
     console.clear()
     console.table(stats)
+
+    log(JSON.stringify(stats))
 }, 1000)
 

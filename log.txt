@@ -1,0 +1,43 @@
+
+{"free":"6575 MB","total":"12240 MB","usage":"53%"}
+ 1646864887004{"free":"6563 MB","total":"12240 MB","usage":"53%"}
+ 1646864888011{"free":"6563 MB","total":"12240 MB","usage":"53%"}
+ 1646864889013{"free":"6570 MB","total":"12240 MB","usage":"53%"}
+ 1646864890019{"free":"6557 MB","total":"12240 MB","usage":"53%"}
+ 1646864891020{"free":"6566 MB","total":"12240 MB","usage":"53%"}
+ 1646864892032{"free":"6568 MB","total":"12240 MB","usage":"53%"}
+ 1646864893035{"free":"6568 MB","total":"12240 MB","usage":"53%"}
+ 1646864894036{"free":"6568 MB","total":"12240 MB","usage":"53%"}
+ 1646864895045{"free":"6553 MB","total":"12240 MB","usage":"53%"}
+ 1646864896060{"free":"6553 MB","total":"12240 MB","usage":"53%"}
+ 1646864897072{"free":"6552 MB","total":"12240 MB","usage":"53%"}
+ 1646864898074{"free":"6490 MB","total":"12240 MB","usage":"53%"} 9
+{"free":"6475 MB","total":"12240 MB","usage":"52%"} 9
+{"free":"6472 MB","total":"12240 MB","usage":"52%"} 9
+{"free":"6474 MB","total":"12240 MB","usage":"52%"} 9
+{"free":"6468 MB","total":"12240 MB","usage":"52%"} 9
+{"free":"6470 MB","total":"12240 MB","usage":"52%"} 9
+{"free":"6502 MB","total":"12240 MB","usage":"53%"} 19:2 3
+{"free":"6491 MB","total":"12240 MB","usage":"53%"} 19:3 3
+{"free":"6491 MB","total":"12240 MB","usage":"53%"} 19:4 3
+{"free":"6490 MB","total":"12240 MB","usage":"53%"} 19:5 3
+{"free":"6487 MB","total":"12240 MB","usage":"52%"} 19:6 3
+{"free":"6487 MB","total":"12240 MB","usage":"52%"} 19:7 3
+{"free":"6481 MB","total":"12240 MB","usage":"52%"} 19:8 3
+{"free":"6479 MB","total":"12240 MB","usage":"52%"} 19:9 3
+{"free":"6476 MB","total":"12240 MB","usage":"52%"} 19:10 3
+{"free":"6474 MB","total":"12240 MB","usage":"52%"} 19:11 3
+{"free":"6474 MB","total":"12240 MB","usage":"52%"} 19:12 3
+{"free":"6483 MB","total":"12240 MB","usage":"52%"} 19:13 3
+{"free":"6483 MB","total":"12240 MB","usage":"52%"} 19:14 3
+{"free":"6484 MB","total":"12240 MB","usage":"52%"} 19:15 3
+{"free":"6481 MB","total":"12240 MB","usage":"52%"} 19:16 3
+{"free":"6483 MB","total":"12240 MB","usage":"52%"} 19:17 3
+{"free":"6484 MB","total":"12240 MB","usage":"52%"} 19:18 3
+{"free":"6484 MB","total":"12240 MB","usage":"52%"} 19:19 3
+{"free":"6485 MB","total":"12240 MB","usage":"52%"} 19:20 3
+{"free":"6477 MB","total":"12240 MB","usage":"52%"} 19:21 3
+{"free":"6470 MB","total":"12240 MB","usage":"52%"} 19:22 3
+{"free":"6471 MB","total":"12240 MB","usage":"52%"} 19:23 3
+{"free":"6471 MB","total":"12240 MB","usage":"52%"} 19:24 3
+{"free":"6472 MB","total":"12240 MB","usage":"52%"} 19:25 3
