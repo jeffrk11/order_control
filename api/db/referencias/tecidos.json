@@ -1,0 +1,25 @@
+{
+    "tecidos":[
+        {
+        "id": 1,
+        "tipo": "SUEDINE"
+        },
+        {
+        "id": 2,
+        "tipo": "RIBANA"
+        },
+        {
+        "id": 3,
+        "tipo": "MALHA"
+        },
+        {
+        "id": 4,
+        "tipo": "PLUSH"
+        },
+        {
+        "id": 5,
+        "tipo": "SOFT"
+        }
+    ]
+
+}

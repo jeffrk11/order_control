@@ -1,0 +1,11 @@
+{
+    "pedidos_referencias":[
+        {
+            "id_pedido": 0,
+            "id_referencia": 16,
+            "id_tamanho": 1,
+            "quantidade_pedido": 10,
+            "quantidade_final": 5
+        }
+    ]
+}
