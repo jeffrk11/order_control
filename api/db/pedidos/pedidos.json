@@ -1,10 +1,8 @@
-{
-    "pedidos":[
-        {
-            "id": 1,
-            "representante": "shaddi",
-            "cliente": "daniela",
-            "data_entrega": "10/05/22"
-        }
-    ]
-}
+[
+    {
+        "id": 2,
+        "representante": "jeef",
+        "cliente": "daniela",
+        "data_entrega": "10/05/22"
+    }
+]

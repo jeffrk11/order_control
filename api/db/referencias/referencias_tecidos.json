@@ -3,6 +3,10 @@
         {
             "id_tecido": 1,
             "id_referencia": 16
+        },
+        {
+            "id_tecido": 2,
+            "id_referencia": 17
         }
     ]
 }

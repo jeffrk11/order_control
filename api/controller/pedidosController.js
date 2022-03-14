@@ -20,9 +20,21 @@ router.get('/pedidos/:id',(req,res,next) =>{
 
 router.post('/pedidos',(req,res,next) =>{
     const pedido = req.body
+    
+    service.save(pedido)
+    res.status(200).send("CRIADO COM SUCESSO")
+})
 
-    console.log(pedido)
-    res.status(200).send(pedido)
+router.delete('/pedidos/:id',(req,res,next) =>{
+    const id = parseInt(req.params.id)
+    const pedido = service.delete(id)
+    res.status(200).send("DELETADO COM SUCESSO")
+})
+
+router.put('/pedidos',(req,res,next) =>{
+    const pedido = req.body
+    service.update(pedido)
+    res.status(200).send("ATUALIZADO COM SUCESSO")
 })
 
 module.exports = router

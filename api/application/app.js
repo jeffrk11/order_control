@@ -3,6 +3,7 @@ const bodyparser = require('body-parser')
 const app = express();
 
 const rotasPedido = require('../controller/pedidosController')
+const rotasFront = require('../controller/dashboardController')
 
 app.use(bodyparser.urlencoded({extended: false})) //dados simples
 app.use(bodyparser.json()) //apenas aceita json 
@@ -25,6 +26,7 @@ app.use( (req, res, next) => {
 
 //rotas
 app.use(rotasPedido)
+app.use(rotasFront)
 
 
 // Quando não encontra rota, entra aqui:
@@ -38,7 +40,8 @@ app.use(rotasPedido)
         res.status(error.status || 500);
         return res.send ({
             erro: {
-                mensagem: error.message
+                mensagem: error.message,
+                body: error.body
             }
         });
     });

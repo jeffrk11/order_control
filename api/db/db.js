@@ -1,26 +1,37 @@
 const path = require('path')
 const fs = require('fs')
-const pedidos = require('../db/pedidos/pedidos.json')
-const pedidos_refs = require('../db/pedidos/pedidos_referencias.json')
+const ped_json = require('../db/pedidos/pedidos.json')
+const pr_json = require('../db/pedidos/pedidos_referencias.json')
+const ref_json = require('../db/referencias/referencias.json')
 
 //logica de jsons aqui
 class DB {
     constructor(){
-        this.jsons = [pedidos,pedidos_refs]
+        this.jsons =    {
+                            pedidos: ped_json,
+                            pedidos_referencias: pr_json,
+                            referencias: ref_json
+                        }
     }
 
     get(table) {
-        for(var i = 0; i < this.jsons.length; i++){
-            if(table in this.jsons[i])
-                return this.jsons[i]
-        }
-        return null
+        return this.jsons[table]
     }
 
     set(pedidos){
         fs.writeFile(
-            path.join('../api/db/pedidos','pedidos.json'),
+            path.join(__dirname,'../db/pedidos/pedidos.json'),
             JSON.stringify(pedidos,null,4),
+            err => {
+                if(err) throw err
+            }
+        )
+    }
+
+    save(table_dir,data){
+        fs.writeFile(
+            path.join(__dirname,table_dir),
+            JSON.stringify(data,null,4),
             err => {
                 if(err) throw err
             }

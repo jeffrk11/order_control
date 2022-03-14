@@ -1,11 +1,16 @@
-{
-    "pedidos_referencias":[
-        {
-            "id_pedido": 0,
-            "id_referencia": 16,
-            "id_tamanho": 1,
-            "quantidade_pedido": 10,
-            "quantidade_final": 5
-        }
-    ]
-}
+[
+    {
+        "id_pedido": 2,
+        "id_referencia": 16,
+        "id_tamanho": 1,
+        "quantidade_pedido": 10,
+        "quantidade_final": 10
+    },
+    {
+        "id_pedido": 2,
+        "id_referencia": 17,
+        "id_tamanho": 1,
+        "quantidade_pedido": 10,
+        "quantidade_final": 0
+    }
+]
