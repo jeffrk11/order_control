@@ -9,14 +9,49 @@ function BusinessException(status=500,message,body){
 }
 
 function addReferencias(pedidos){
-    const ped_ref = repo.findAllPedidosReferencias();
-    pedidos = pedidos.map(e => {
-        e.referencias = ped_ref.filter(refs => {
-            if(e.id === refs.id_pedido){
-                return refs
-            }
+    //const ped_ref = repo.findAllPedidosReferencias();
+
+    pedidos.forEach(pedido => {
+        let refs = repo.findAllPedidosReferenciasByPedidoId(pedido.id)
+        pedido.referencias = []
+        ref_aux = []
+        refs.forEach(r =>{
+            //colocando id e removendo duplicatas
+            ref_aux.push(r.id_referencia)
+            ref_aux = [...new Set(ref_aux)]
+
+            //fazer algoritimo
+
         })
     })
+
+
+
+
+
+    // pedidos = pedidos.forEach(pedido => {
+    //     ref_model_aux = {}
+    //     ref_model_aux.tamanhos = []
+    //     pedido.referencias = []
+
+    //     ped_ref.forEach(ref =>{
+    //         if(pedido.id === ref.id_pedido){
+
+    //             ref_model_aux.id_referencia = ref.id_referencia
+    //             ref_model_aux.tamanhos.push( 
+    //                 {
+    //                     id_tamanho: ref.id_tamanho,
+    //                     quantidade_final: ref.quantidade_final,
+    //                     quantidade_pedido: ref.quantidade_pedido
+    //                 }
+    //             )
+    //         }
+    //     })
+    //     if(ref_model_aux.tamanhos.length > 0){
+    //         pedido.referencias.push(ref_model_aux)
+    //     }
+    // })
+    
 }
 
 function validateRef(referencias){

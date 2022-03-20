@@ -10,6 +10,12 @@ module.exports = {
     findAllPedidosReferencias: function(){
         return DB.get('pedidos_referencias')
     },
+    //get all referencias  with pedido id
+    findAllPedidosReferenciasByPedidoId: function(id){
+        return DB.get('pedidos_referencias').filter( e =>{
+            return e.id_pedido === id
+        })
+    },
     //get one by id
     findById: function(id){
         return DB.get('pedidos').find(e => {

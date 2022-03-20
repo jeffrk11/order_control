@@ -1,5 +1,19 @@
 [
     {
+        "id_pedido": 3,
+        "id_referencia": 16,
+        "id_tamanho": 1,
+        "quantidade_pedido": 10,
+        "quantidade_final": 0
+    },
+    {
+        "id_pedido": 3,
+        "id_referencia": 16,
+        "id_tamanho": 2,
+        "quantidade_pedido": 10,
+        "quantidade_final": 0
+    },
+    {
         "id_pedido": 2,
         "id_referencia": 16,
         "id_tamanho": 1,
@@ -10,6 +24,13 @@
         "id_pedido": 2,
         "id_referencia": 17,
         "id_tamanho": 1,
+        "quantidade_pedido": 10,
+        "quantidade_final": 0
+    },
+    {
+        "id_pedido": 2,
+        "id_referencia": 16,
+        "id_tamanho": 3,
         "quantidade_pedido": 10,
         "quantidade_final": 0
     }
