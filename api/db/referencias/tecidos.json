@@ -1,5 +1,4 @@
-{
-    "tecidos":[
+    [
         {
         "id": 1,
         "tipo": "SUEDINE"
@@ -21,5 +20,3 @@
         "tipo": "SOFT"
         }
     ]
-
-}

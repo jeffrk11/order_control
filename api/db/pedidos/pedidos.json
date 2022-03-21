@@ -9,23 +9,6 @@
         "id": 3,
         "representante": "jeef",
         "cliente": "daniela",
-        "data_entrega": "10/05/22",
-        "referencias": [
-            {
-                "tamanhos": [
-                    {
-                        "id_tamanho": 1,
-                        "quantidade_final": 0,
-                        "quantidade_pedido": 10
-                    },
-                    {
-                        "id_tamanho": 2,
-                        "quantidade_final": 0,
-                        "quantidade_pedido": 10
-                    }
-                ],
-                "id_referencia": 16
-            }
-        ]
+        "data_entrega": "10/05/22"
     }
 ]

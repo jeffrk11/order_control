@@ -1,5 +1,5 @@
-{
-    "referencias_tecidos":[
+
+    [
         {
             "id_tecido": 1,
             "id_referencia": 16
@@ -7,6 +7,9 @@
         {
             "id_tecido": 2,
             "id_referencia": 17
+        },
+        {
+            "id_tecido": 3,
+            "id_referencia": 1
         }
     ]
-}

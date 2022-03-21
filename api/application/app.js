@@ -7,6 +7,7 @@ const path = require('path')
 app.use(cors()) //habilitando cors na aplicacao
 
 const rotasPedido = require('../controller/pedidosController')
+const rotasReferencia = require('../controller/referenciasController')
 const frontPedidos = require('../front/pedidos/pedidos')
 
 
@@ -39,6 +40,7 @@ app.use( (req, res, next) => {
 
 //rotas
 app.use(rotasPedido)
+app.use(rotasReferencia)
 app.use(frontPedidos)
 
 app.get('/',(req, res) => {

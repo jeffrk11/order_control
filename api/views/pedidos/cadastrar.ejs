@@ -73,7 +73,7 @@
                             <div class="row m-2 p-2 justify-content-end">
                                 <div class="input-group w-auto">
                                     <input id="txt_add_ref" type="number" class="form-control" placeholder="Referência">
-                                    <button id="btn_add_ref" class="btn btn-outline-success" type="button" ><b>Adicionar</b></button>
+                                    <button id="btn_add_ref" class="btn btn-outline-success" type="button" onclick="table_add_ref()"><b>Adicionar</b></button>
                                 </div>
                             </div>
                             <!-- pedidos lista  -->
@@ -93,13 +93,30 @@
                                     </thead>
                                     <tbody id="tb">
                                         <!-- dinamicamente pegando do back, se for ediçao de pedido -->
-                                        <% for( let i = 0; i < pedido.referencias.length; i++) { %>
-                                            <tr>
-                                                <th scope="row"> <%= pedido.referencias[i].id_referencia %></th>
-                                                <td> <%= 'blablabla' %> </td>
-                                                
+                                        <% pedido.referencias.forEach( pedido => { %>
+                                            <tr id="tr_<%= pedido.referencia %>">
+                                                <!-- setando variaveis, caso undefined seta 0 -->
+                                                <% let rn= pedido.tamanhos.find( e => { return e.id_tamanho === 1 }) || 0 %> 
+                                                <% let p = pedido.tamanhos.find( e => { return e.id_tamanho === 2 || e.id_tamanho === 5}) || 0 %> 
+                                                <% let m = pedido.tamanhos.find( e => { return e.id_tamanho === 3 || e.id_tamanho === 6}) || 0 %> 
+                                                <% let g = pedido.tamanhos.find( e => { return e.id_tamanho === 4 || e.id_tamanho === 7}) || 0 %> 
+                                                <!-- descricao -->
+                                                <% let desc = referencias.find(e => { return e.id === pedido.referencia }) %> 
+                                                <!-- somando quantidades dessa referencia -->
+                                                <% let total = 0 %>
+                                                <% pedido.tamanhos.forEach(e => { total+= e.quantidade_pedido }) %>
+                                                <!-- desenhando tabela  -->
+                                                <td> <%= pedido.referencia %> </td>
+                                                <td> <%= desc.tipo + ' ' + desc.estilo %> </td>
+                                                <td> <%= total %> </td>
+                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= rn.quantidade_pedido || 0 %>">  </td>
+                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= p.quantidade_pedido  || 0 %>"> </td>
+                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= m.quantidade_pedido  || 0 %>"> </td>
+                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= g.quantidade_pedido  || 0 %>"> </td>
+                                                <td> <button onClick="table_del_ref(<%= pedido.referencia %>)" class="btn btn-outline-danger  m-0 p-0 w-100" type="button">X</button> </td>
+
                                             </tr>
-                                        <% } %>
+                                        <% }) %>
                                     </tbody>
                                 </table>
                             </div>
@@ -113,21 +130,101 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
     //carregando pedidos
-    document.addEventListener('DOMContentLoaded', function() {
+    // document.addEventListener('DOMContentLoaded', function() {
         
-        axios.get('http://localhost:9090/pedidos')
-            .then( resp => console.log(resp))
-            .catch(error => console.log(error))
-    })
+    //     axios.get('http://localhost:9090/pedidos')
+    //         .then( resp => console.log(resp))
+    //         .catch(error => console.log(error))
+    // })
+    let pedido = (<%- JSON.stringify(pedido) %>)
+    let referencias = (<%- JSON.stringify(referencias) %>)
 
-    let data = (<%- JSON.stringify(pedido) %>)
-    let pedido = {}
-    let tabela = document.getElementById('tb')
-    let txt_add_ref = document.getElementById('txt_add_ref')
     
-    document.getElementById('btn_add_ref').addEventListener('click',() =>{
-        console.log(data)
-    })
+    
+    
+    //adiciona ao json global
+    function table_add_ref(){
+        let txt_add_ref = document.getElementById('txt_add_ref').value || 0
+        if(!txt_add_ref) window.alert('referencia invalida')
+        else{
+            let ref = referencias.find( e => {
+                return e.id === parseInt(txt_add_ref)
+            })
+            if(!ref) window.alert('referencia não encontrada')
+            else{
+                if(pedido.referencias.find( e => { return e.referencia === ref.id}))
+                    window.alert('referencia ja adicionada')
+                else{
+                    let model =
+                    {
+                        referencia: ref.id,
+                        tamanhos: []
+                    }
+                    pedido.referencias.push(model)
+                }
+            }
+        }
+        draw_table()
+    }
+    //remove do json global
+    function table_del_ref(ref){
+        //remove do json global
+        pedido.referencias = pedido.referencias.filter( e =>{
+            return e.referencia !== ref
+        })
+        draw_table()
+    }
+    //desenha a tabela baseado no json
+    function draw_table(){
+        let tbody = document.getElementById('tb')
+        tbody.innerHTML = ''
+        pedido.referencias.forEach(e => {
+            let tr = tbody.insertRow()
+            //id referencia
+            tr.insertCell().appendChild(document.createTextNode(e.referencia))
+            //descricao
+            let desc = referencias.find(r => { return r.id === e.referencia })
+            tr.insertCell().appendChild(document.createTextNode(desc.tipo + ' ' + desc.estilo))
+            //total
+            let total = 0 
+            e.tamanhos.forEach(p => { total+= p.quantidade_pedido })
+            tr.insertCell().appendChild(document.createTextNode(total))
+            //input model
+            let input = document.createElement('input')
+            input.className = 'input-transp w-100'
+            input.type = 'number'
+            let inputs = [input.cloneNode(),input.cloneNode(),input.cloneNode(),input.cloneNode()]
+            //rn
+            let rn = (e.tamanhos.find( t => { return  t.id_tamanho === 1}) || 0)
+            inputs[0].value = rn.quantidade_pedido || 0
+            tr.insertCell().appendChild(inputs[0])
+            //1/p
+            let p = (e.tamanhos.find( t => { return t.id_tamanho === 2 || t.id_tamanho === 5}) || 0)
+            inputs[1].value = p.quantidade_pedido || 0
+            tr.insertCell().appendChild(inputs[1])
+            //2/m
+            let m= (e.tamanhos.find( t => { return t.id_tamanho === 3 || t.id_tamanho === 6}) || 0)
+            inputs[2].value = m.quantidade_pedido || 0
+            tr.insertCell().appendChild(inputs[2])
+            //1/p
+            let g = (e.tamanhos.find( t => { return t.id_tamanho === 4 || t.id_tamanho === 7}) || 0)
+            inputs[3].value = g.quantidade_pedido || 0
+            tr.insertCell().appendChild(inputs[3])
+            //botao acao
+            let btn = document.createElement('button')
+            btn.className = 'btn btn-outline-danger  m-0 p-0 w-100'
+            btn.appendChild(document.createTextNode('X'))
+            btn.type = 'button'
+            btn.setAttribute( "onClick", "table_del_ref("+e.referencia+")" );
+            tr.insertCell().appendChild(btn)
+            //setando tds estilos 3,4,5,6
+            for(let i = 0; i < tr.children.length; i++){
+                if(i > 2)
+                    tr.children[i].width = "10%"
+            }
+            
+        });
+    }
 </script>
 
 </body>

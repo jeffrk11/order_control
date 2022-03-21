@@ -13,9 +13,8 @@ router.get('/pedidos/:id',(req,res,next) =>{
     const id = parseInt(req.params.id)
     const pedido = service.findById(id)
 
-    let http = 200
-    if(pedido === undefined) http = 204
-    res.status(http).send(JSON.stringify(service.findById(id)))
+    
+    res.status(200).send((pedido))
 })
 
 router.post('/pedidos',(req,res,next) =>{

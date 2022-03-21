@@ -1,5 +1,5 @@
-{
-    "tipos":[    
+
+    [    
         {
             "id": 1,
             "descricao": "BODY"
@@ -21,4 +21,3 @@
             "descricao": "CAMISETA"
         }
     ]
-}

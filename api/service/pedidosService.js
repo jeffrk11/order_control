@@ -1,12 +1,6 @@
 const repo =require('../repository/pedidosRepository')
 const ref_repo =require('../repository/referenciasRepository')
 
-function BusinessException(status=500,message,body){
-    this.message = message;
-    this.body = body
-    this.name = "BusinessException";
-    this.status = status
-}
 
 function addReferencias(pedidos){
     //const ped_ref = repo.findAllPedidosReferencias();
@@ -15,42 +9,31 @@ function addReferencias(pedidos){
         let refs = repo.findAllPedidosReferenciasByPedidoId(pedido.id)
         pedido.referencias = []
         ref_aux = []
+        let map =  new Map()
         refs.forEach(r =>{
-            //colocando id e removendo duplicatas
-            ref_aux.push(r.id_referencia)
-            ref_aux = [...new Set(ref_aux)]
-
-            //fazer algoritimo
-
+            //copiando para n alterar o objeto de referencia
+            let cop_r = JSON.parse(JSON.stringify(r)) //deep copy
+            //se nao existe no map ele adiciona
+            if(map.get(cop_r.id_referencia) === undefined){
+                map.set(cop_r.id_referencia, [])
+            }
+            //agora existindo vai setar
+            map.get(cop_r.id_referencia).push(cop_r)
+            //deixando mais amigavel
+            delete cop_r.id_referencia
+            delete cop_r.id_pedido
         })
+        //setar dentro de pedido.referencias
+        for(let key in Object.fromEntries(map)){
+            pedido.referencias.push(
+                {
+                    referencia: parseInt(key),
+                    tamanhos: map.get(parseInt(key))
+                }
+            )
+        }
+
     })
-
-
-
-
-
-    // pedidos = pedidos.forEach(pedido => {
-    //     ref_model_aux = {}
-    //     ref_model_aux.tamanhos = []
-    //     pedido.referencias = []
-
-    //     ped_ref.forEach(ref =>{
-    //         if(pedido.id === ref.id_pedido){
-
-    //             ref_model_aux.id_referencia = ref.id_referencia
-    //             ref_model_aux.tamanhos.push( 
-    //                 {
-    //                     id_tamanho: ref.id_tamanho,
-    //                     quantidade_final: ref.quantidade_final,
-    //                     quantidade_pedido: ref.quantidade_pedido
-    //                 }
-    //             )
-    //         }
-    //     })
-    //     if(ref_model_aux.tamanhos.length > 0){
-    //         pedido.referencias.push(ref_model_aux)
-    //     }
-    // })
     
 }
 

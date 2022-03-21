@@ -1,8 +1,7 @@
-{
-    "conjuntos_referencias":[
+
+    [
         {
             "id_conjunto": 123,
             "id_referencia": 16
         }
     ]
-}
