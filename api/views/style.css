@@ -5,7 +5,78 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 85.5%;
+}
+
+.container_relative{
+  position: relative;
+}
+/* Show the arrow and content and restore pointer events when hovering the trigger element */
+.container_relative:hover .container_arrow,
+.container_relative:hover .container_content {
+    opacity: 1;
+    pointer-events: initial;
+}
+.container_content{
+    /* Invisible by default */
+    opacity: 0;
+    /* To prevent accidental interactions with other elements  */
+    pointer-events: none;
+    /* Background color, must be the same as the border color of arrow */
+    background-color: #96baec;
+    border-radius: 2px;
+    /* Position */
+    bottom: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -8px);
+    /* Displayed on top of other element */
+    z-index: 10;
+}
+.container_arrow {
+  /* Invisible by default */
+  opacity: 0;
+
+  /* To prevent accidental interactions with other elements  */
+  pointer-events: none;
+
+  /* Border */
+  border: 8px solid transparent;
+  border-top-color: #96baec;
+
+  /* Position */
+  bottom: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 8px);
+
+  /* Zero size */
+  height: 0;
+  width: 0;
+
+  /* Displayed on top of other element */
+  z-index: 10;
+}
+.container_docker {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  background: #a1c9ee;
+  width: auto !important;
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+p input {
+  border: none;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  width: auto;
 }
 
 .custom-body{

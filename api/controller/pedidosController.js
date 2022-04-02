@@ -17,9 +17,8 @@ router.get('/pedidos/:id',(req,res,next) =>{
     res.status(200).send((pedido))
 })
 
-router.post('/pedidos',(req,res,next) =>{
+router.post('/pedidoss',(req,res,next) =>{
     const pedido = req.body
-    
     service.save(pedido)
     res.status(200).send("CRIADO COM SUCESSO")
 })

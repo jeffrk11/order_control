@@ -9,8 +9,7 @@ app.use(cors()) //habilitando cors na aplicacao
 const rotasPedido = require('../controller/pedidosController')
 const rotasReferencia = require('../controller/referenciasController')
 const frontPedidos = require('../front/pedidos/pedidos')
-
-
+const frontReferencias = require('../front/referencias/referencia')
 
 app.set('view engine', 'ejs');
 //app.set('views', '../views');
@@ -42,6 +41,7 @@ app.use( (req, res, next) => {
 app.use(rotasPedido)
 app.use(rotasReferencia)
 app.use(frontPedidos)
+app.use(frontReferencias)
 
 app.get('/',(req, res) => {
     res.render(path.join(__dirname,'../views/index.ejs'));

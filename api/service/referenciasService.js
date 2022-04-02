@@ -24,23 +24,26 @@ function montarReferencia(id){
 }
 
 module.exports = {
+    save: function(ref){
+        if(repo.findById(ref.id))
+            throw new BusinessException(404,"REFERENCIA JA EXISTE COM ESSE CODIGO",ref.id)
+        repo.save(ref)
+    },
     findById: function(id){
         const ref = repo.findById(id)
         if(ref !== undefined)
-            return montarReferencia(id);
+            return ref;
 
         throw new BusinessException(404,"REFERENCIA NAO EXISTE COM ESSE CODIGO")
     },
     findAllByIds: function(list){
         const refs = repo.findAllByIds(list)
-        return refs.map( e =>{
-            return montarReferencia(e.id)
-        })
+        return refs;
     },
     findAll: function(){
-        const refs = repo.findAll()
-        return refs.map( e => {
-            return montarReferencia(e.id)
-        })
+        return repo.findAll()
+        // return refs.map( e => {
+        //     return montarReferencia(e.id)
+        // })
     }
 }

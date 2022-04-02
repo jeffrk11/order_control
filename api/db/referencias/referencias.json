@@ -1,13 +1,26 @@
 [
-    
-        {
-            "id": 16
-        },
-        {
-            "id": 17
-        },
-        {
-            "id": 1
+    {
+        "id": 1,
+        "descricao": "Body M/L Suedine P/G Bordado",
+        "tipo": "BODY",
+        "estilo": "BORDADO",
+        "tecido": "SUEDINE",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
         }
-    
+    },
+    {
+        "id": 2,
+        "descricao": "Body M/L Suedine P/G C/ Termo",
+        "tipo": "BODY",
+        "estilo": "TERMO",
+        "tecido": "SUEDINE",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        }
+    }
 ]

@@ -1,6 +1,9 @@
 const DB = require('../db/db.js')
 
 module.exports = {
+    save: function(ref){
+        DB.insert('referencias',ref)
+    },
     //get one by id
     findById: function(id){
         return DB.get('referencias').find(e => {

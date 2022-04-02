@@ -42,18 +42,29 @@
                                 <!-- pedido codigo -->
                                 <div class="col-2">
                                     <label for="id" class="form-label"><b>Pedido</b></label>
-                                    <% if (pedido) { %>
-                                        <h2><%= pedido.id %></h2>
-                                    <% } else {%>
-                                        <input type="number" class="form-control" id="id" value="">
-                                    <% } %> 
+                                    <div class="container_relative">
+                                        <!-- The tooltip content -->
+                                        <div class="container_content">
+                                            <tbody>
+
+                                            </tbody>
+                                        </div>
+                                        <!-- The tooltip arrow -->
+                                        <div class="container_arrow"></div>
+                                        
+                                        <% if (pedido) { %>
+                                            <h2><%= pedido.id %></h2>
+                                        <% } else {%>
+                                            <input type="number" class="form-control" id="id" value="">
+                                        <% } %> 
+                                    </div>
                                 </div>
                                 <!-- representante nome -->
                                 <div class="col-3">
                                     <label for="representante" class="form-label"><b>Representante</b></label>
                                     <input type="text" class="form-control" id="representante" value=" <%= pedido.representante %> ">
                                 </div>
-                                <!-- cleinte nome  -->
+                                <!-- cliente nome  -->
                                 <div class="col-3">
                                     <label for="cliente" class="form-label"><b>Cliente</b></label>
                                     <input type="text" class="form-control" id="cliente" value=" <%= pedido.cliente %> " >
@@ -65,9 +76,9 @@
                                 </div>
                             </div>
                             <!-- botoes -->
-                            <div class="row m-2 p-2 justify-content-end">
+                            <div class="row m-2 p-2 justify-content-end" style="position: relative;" >
                                 <button type="button" class="m-2 w-auto btn btn-outline-success"><b>Salvar</b></button>
-                                <button type="button" class="m-2 w-auto btn btn-outline-danger"><b>Cancelar</b></button>
+                                <button id="btn_cancelar" onclick="pop()" type="button" class="m-2 w-auto btn btn-outline-danger"><b>Cancelar</b></button>
                             </div>
                             <!-- adicionar Ref -->
                             <div class="row m-2 p-2 justify-content-end">
@@ -85,38 +96,17 @@
                                             <th scope="col">Descrição</th>
                                             <th scope="col">Total</th>
                                             <th scope="col">RN</th>
-                                            <th scope="col">P/1</th>
-                                            <th scope="col">M/2</th>
-                                            <th scope="col">G/3</th>
+                                            <th scope="col">P</th>
+                                            <th scope="col">M</th>
+                                            <th scope="col">G</th>
+                                            <th scope="col">1</th>
+                                            <th scope="col">2</th>
+                                            <th scope="col">3</th>
                                             <th scope="col">Ação</th>
                                         </tr>
                                     </thead>
                                     <tbody id="tb">
                                         <!-- dinamicamente pegando do back, se for ediçao de pedido -->
-                                        <% pedido.referencias.forEach( pedido => { %>
-                                            <tr id="tr_<%= pedido.referencia %>">
-                                                <!-- setando variaveis, caso undefined seta 0 -->
-                                                <% let rn= pedido.tamanhos.find( e => { return e.id_tamanho === 1 }) || 0 %> 
-                                                <% let p = pedido.tamanhos.find( e => { return e.id_tamanho === 2 || e.id_tamanho === 5}) || 0 %> 
-                                                <% let m = pedido.tamanhos.find( e => { return e.id_tamanho === 3 || e.id_tamanho === 6}) || 0 %> 
-                                                <% let g = pedido.tamanhos.find( e => { return e.id_tamanho === 4 || e.id_tamanho === 7}) || 0 %> 
-                                                <!-- descricao -->
-                                                <% let desc = referencias.find(e => { return e.id === pedido.referencia }) %> 
-                                                <!-- somando quantidades dessa referencia -->
-                                                <% let total = 0 %>
-                                                <% pedido.tamanhos.forEach(e => { total+= e.quantidade_pedido }) %>
-                                                <!-- desenhando tabela  -->
-                                                <td> <%= pedido.referencia %> </td>
-                                                <td> <%= desc.tipo + ' ' + desc.estilo %> </td>
-                                                <td> <%= total %> </td>
-                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= rn.quantidade_pedido || 0 %>">  </td>
-                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= p.quantidade_pedido  || 0 %>"> </td>
-                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= m.quantidade_pedido  || 0 %>"> </td>
-                                                <td width="10%"> <input type="number" class="input-transp w-100" value="<%= g.quantidade_pedido  || 0 %>"> </td>
-                                                <td> <button onClick="table_del_ref(<%= pedido.referencia %>)" class="btn btn-outline-danger  m-0 p-0 w-100" type="button">X</button> </td>
-
-                                            </tr>
-                                        <% }) %>
                                     </tbody>
                                 </table>
                             </div>
@@ -126,7 +116,27 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal_line" tabindex="-1" aria-labelledby="modal_lineLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body" id="modal_body">
+                
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" id="btn_modal_save" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
 <!-- script q faz chamada no back -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
     //carregando pedidos
@@ -139,8 +149,10 @@
     let pedido = (<%- JSON.stringify(pedido) %>)
     let referencias = (<%- JSON.stringify(referencias) %>)
 
-    
-    
+    //page load
+    window.onload = function() {
+        draw_table()
+    }
     
     //adiciona ao json global
     function table_add_ref(){
@@ -189,41 +201,243 @@
             let total = 0 
             e.tamanhos.forEach(p => { total+= p.quantidade_pedido })
             tr.insertCell().appendChild(document.createTextNode(total))
-            //input model
-            let input = document.createElement('input')
-            input.className = 'input-transp w-100'
-            input.type = 'number'
-            let inputs = [input.cloneNode(),input.cloneNode(),input.cloneNode(),input.cloneNode()]
+            //qtd pedidos
+            let div_container = document.createElement('div')
+                div_container.className = 'd-flex'
+            //pedido
+            let pedido = document.createElement('h4')
+                pedido.className = 'm-1'
+            let pedido_fin = document.createElement('h4')
+            div_container.appendChild(pedido)
+            div_container.appendChild(pedido_fin)
+            let qtds_pedido = [div_container.cloneNode(true),
+                                div_container.cloneNode(true),
+                                div_container.cloneNode(true),
+                                div_container.cloneNode(true),
+                                div_container.cloneNode(true),
+                                div_container.cloneNode(true),
+                                div_container.cloneNode(true)]
+            
             //rn
-            let rn = (e.tamanhos.find( t => { return  t.id_tamanho === 1}) || 0)
-            inputs[0].value = rn.quantidade_pedido || 0
-            tr.insertCell().appendChild(inputs[0])
+            let rn = (e.tamanhos.find( t => { return  t.id_tamanho === 1}))
+            qtds_pedido[0].firstChild.innerHTML = rn ? rn.quantidade_pedido : 0
+            qtds_pedido[0].lastChild.innerHTML = rn ? rn.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[0])
             //1/p
-            let p = (e.tamanhos.find( t => { return t.id_tamanho === 2 || t.id_tamanho === 5}) || 0)
-            inputs[1].value = p.quantidade_pedido || 0
-            tr.insertCell().appendChild(inputs[1])
+            let p = (e.tamanhos.find( t => { return t.id_tamanho === 2 || t.id_tamanho === 5}))
+            qtds_pedido[1].firstChild.innerHTML  = p ? p.quantidade_pedido : 0
+            qtds_pedido[1].lastChild.innerHTML = p ? p.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[1])
             //2/m
-            let m= (e.tamanhos.find( t => { return t.id_tamanho === 3 || t.id_tamanho === 6}) || 0)
-            inputs[2].value = m.quantidade_pedido || 0
-            tr.insertCell().appendChild(inputs[2])
+            let m= (e.tamanhos.find( t => { return t.id_tamanho === 3 || t.id_tamanho === 6}))
+            qtds_pedido[2].firstChild.innerHTML  = m ? m.quantidade_pedido : 0
+            qtds_pedido[2].lastChild.innerHTML = m ? m.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[2])
             //1/p
-            let g = (e.tamanhos.find( t => { return t.id_tamanho === 4 || t.id_tamanho === 7}) || 0)
-            inputs[3].value = g.quantidade_pedido || 0
-            tr.insertCell().appendChild(inputs[3])
+            let g = (e.tamanhos.find( t => { return t.id_tamanho === 4 || t.id_tamanho === 7}))
+            qtds_pedido[3].firstChild.innerHTML  = g ? g.quantidade_pedido : 0
+            qtds_pedido[3].lastChild.innerHTML = g ? g.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[3])
+            //rn
+            let t1 = (e.tamanhos.find( t => { return  t.id_tamanho === 1}))
+            qtds_pedido[4].firstChild.innerHTML = rn ? rn.quantidade_pedido : 0
+            qtds_pedido[4].lastChild.innerHTML = rn ? rn.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[4])
+            //1/p
+            let t2 = (e.tamanhos.find( t => { return t.id_tamanho === 2 || t.id_tamanho === 5}))
+            qtds_pedido[5].firstChild.innerHTML  = p ? p.quantidade_pedido : 0
+            qtds_pedido[5].lastChild.innerHTML = p ? p.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[5])
+            //2/m
+            let t3= (e.tamanhos.find( t => { return t.id_tamanho === 3 || t.id_tamanho === 6}))
+            qtds_pedido[6].firstChild.innerHTML  = m ? m.quantidade_pedido : 0
+            qtds_pedido[6].lastChild.innerHTML = m ? m.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[6])
+            //1/p
+            let t4 = (e.tamanhos.find( t => { return t.id_tamanho === 4 || t.id_tamanho === 7}))
+            qtds_pedido[7].firstChild.innerHTML  = g ? g.quantidade_pedido : 0
+            qtds_pedido[7].lastChild.innerHTML = g ? g.quantidade_final : 0
+            tr.insertCell().appendChild(qtds_pedido[7])
             //botao acao
-            let btn = document.createElement('button')
-            btn.className = 'btn btn-outline-danger  m-0 p-0 w-100'
-            btn.appendChild(document.createTextNode('X'))
-            btn.type = 'button'
-            btn.setAttribute( "onClick", "table_del_ref("+e.referencia+")" );
-            tr.insertCell().appendChild(btn)
-            //setando tds estilos 3,4,5,6
+                //div container
+                let div_btns = document.createElement('div')
+                    div_btns.className = 'd-flex justify-content-evenly'
+                //btn edit
+                let btn_edit = document.createElement('button')
+                    btn_edit.className = 'btn btn-outline-info  m-1 p-0 w-100'
+                    btn_edit.appendChild(document.createTextNode('E'))
+                    btn_edit.type = 'button'
+                    btn_edit.setAttribute( "onClick", "draw_modal_content("+ e.referencia +")" );
+                    btn_edit.setAttribute("data-bs-toggle" ,"modal")
+                    btn_edit.setAttribute("data-bs-target","#modal_line")
+                //btn del
+                let btn_del = document.createElement('button')
+                    btn_del.className = 'btn btn-outline-danger  m-1 p-0 w-100'
+                    btn_del.appendChild(document.createTextNode('X'))
+                    btn_del.type = 'button'
+                    btn_del.setAttribute( "onClick", "table_del_ref("+e.referencia+")" );
+                    //setando tds estilos 3,4,5,6
+            tr.insertCell().appendChild(div_btns)
+                div_btns.appendChild(btn_edit)
+                div_btns.appendChild(btn_del)
             for(let i = 0; i < tr.children.length; i++){
                 if(i > 2)
                     tr.children[i].width = "10%"
             }
             
         });
+    }
+
+    function draw_modal_content(referencia){
+        //objeto
+        let ref = pedido.referencias.find(e=>{ return e.referencia === referencia})
+        let desc = referencias.find(r => { return r.id === ref.referencia })
+        //pegando o corpo do modal
+        let modal_body = document.getElementById('modal_body')
+            modal_body.innerHTML = ''
+        //set onclick modal
+        let btn_modal_save = document.getElementById('btn_modal_save')
+            btn_modal_save.setAttribute('onclick','saveValuesModal('+referencia+')')
+        //titulo
+        let title = this.createElement('modal_title','div','row'); 
+            title.appendChild(this.createElement('modal_title_txt','h4',undefined,ref.referencia + '  ' + desc.tipo + ' ' + desc.estilo))
+        //cabecalho tabela
+        let row_cabecalho = this.createElement('row_cabecalho','div','row m-1');
+        //col tamanho
+        let col_tamanho = this.createElement('col_tamanho','div','col')
+            col_tamanho.appendChild(this.createElement('col_tamanho_txt','h4',undefined,'Tamanho'))
+        //col pedido
+        let col_pedido = this.createElement('col_pedido','div','col')
+            col_pedido.appendChild(this.createElement('col_pedido_txt','h4',undefined,'Pedido'))
+        //col pedido final
+        let col_pedido_final = this.createElement('col_pedido_final','div','col')
+            col_pedido_final.appendChild(this.createElement('col_pedido_final_txt','h4',undefined,'Pedido final'))
+        //tamanhos e inputs  
+        //RN 
+        let row_rn = this.createElement('row_rn','div','row m-1')
+            row_rn.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('col_tamanho_txt','h5',undefined,'RN')))
+            row_rn.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('rn_input_pedido','input',undefined,undefined,'number')))
+            row_rn.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('rn_input_pedido_final','input',undefined,undefined,'number')))
+        //p1
+        let row_p1 = this.createElement('row_p1','div','row m-1')
+            row_p1.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('col_tamanho_txt','h5',undefined,'P1')))
+            row_p1.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('p1_input_pedido','input',undefined,undefined,'number')))
+            row_p1.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('p1_input_pedido_final','input',undefined,undefined,'number')))
+        //m2
+        let row_m2 = this.createElement('row_m2','div','row m-1')
+            row_m2.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('col_tamanho_txt','h5',undefined,'M2')))
+            row_m2.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('m2_input_pedido','input',undefined,undefined,'number')))
+            row_m2.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('m2_input_pedido_final','input',undefined,undefined,'number')))
+        //g3
+        let row_g3 = this.createElement('row_g3','div','row m-1')
+            row_g3.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                            this.createElement('col_tamanho_txt','h5',undefined,'G3')))
+            row_g3.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                this.createElement('g3_input_pedido','input',undefined,undefined,'number')))
+            row_g3.appendChild(this.createElement(undefined,'div','col',undefined,undefined,
+                                this.createElement('g3_input_pedido_final','input',undefined,undefined,'number')))
+        //estrutura
+        modal_body.appendChild(title)
+        modal_body.appendChild(row_cabecalho)
+            row_cabecalho.appendChild(col_tamanho)
+            row_cabecalho.appendChild(col_pedido)
+            row_cabecalho.appendChild(col_pedido_final)
+        modal_body.appendChild(row_rn)
+        modal_body.appendChild(row_p1)
+        modal_body.appendChild(row_m2)
+        modal_body.appendChild(row_g3)
+        //set values
+        this.setValuesModal(ref)
+    }
+    function setValuesModal(ref){
+        //values
+        let rn_tamanho = ref.tamanhos.find( e => { return e.id_tamanho === 1})
+        let p1_tamanho = ref.tamanhos.find( e => { return e.id_tamanho === 2 || e.id_tamanho === 5})
+        let m2_tamanho = ref.tamanhos.find( e => { return e.id_tamanho === 3 || e.id_tamanho === 6})
+        let g3_tamanho = ref.tamanhos.find( e => { return e.id_tamanho === 4 || e.id_tamanho === 7})
+        //rn
+        console.log(ref)
+        let rn_input_pedido = document.getElementById('rn_input_pedido')
+            rn_input_pedido.value = rn_tamanho ? rn_tamanho.quantidade_pedido : 0
+        let rn_input_pedido_final = document.getElementById('rn_input_pedido_final')
+            rn_input_pedido_final.value =  rn_tamanho ? rn_tamanho.quantidade_final : 0
+        //p1 
+        let p1_input_pedido = document.getElementById('p1_input_pedido')
+            p1_input_pedido.value = p1_tamanho ? p1_tamanho.quantidade_pedido : 0
+        let p1_input_pedido_final = document.getElementById('p1_input_pedido_final')
+            p1_input_pedido_final.value =  p1_tamanho ? p1_tamanho.quantidade_final : 0
+        //m2
+        let m2_input_pedido = document.getElementById('m2_input_pedido')
+            m2_input_pedido.value =  m2_tamanho ? m2_tamanho.quantidade_pedido : 0
+        let m2_input_pedido_final = document.getElementById('m2_input_pedido_final')
+            m2_input_pedido_final.value =  m2_tamanho ? m2_tamanho.quantidade_final : 0
+        //g3
+        let g3_input_pedido = document.getElementById('g3_input_pedido')
+            g3_input_pedido.value =  g3_tamanho ? g3_tamanho.quantidade_pedido : 0
+        let g3_input_pedido_final = document.getElementById('g3_input_pedido_final')
+            g3_input_pedido_final.value =  g3_tamanho ? g3_tamanho.quantidade_final : 0
+
+    }
+    function saveValuesModal(referencia){
+        //values
+        let rn_input_pedido = document.getElementById('rn_input_pedido')
+        let rn_input_pedido_final = document.getElementById('rn_input_pedido_final')
+        let p1_input_pedido = document.getElementById('p1_input_pedido')
+        let p1_input_pedido_final = document.getElementById('p1_input_pedido_final')
+        let m2_input_pedido = document.getElementById('m2_input_pedido')
+        let m2_input_pedido_final = document.getElementById('m2_input_pedido_final')
+        let g3_input_pedido = document.getElementById('g3_input_pedido')
+        let g3_input_pedido_final = document.getElementById('g3_input_pedido_final')
+
+        let ref = pedido.referencias.find(e=>{ return e.referencia === referencia})
+        //limpando os tamanhos
+        ref.tamanhos = []
+        //set values in ref
+        if(rn_input_pedido.value > 0 || rn_input_pedido_final.value > 0){
+            ref.tamanhos.push({
+                id_tamanho: 1,
+                quantidade_pedido: rn_input_pedido.value,
+                quantidade_final: rn_input_pedido_final.value
+            })
+        }
+        if(p1_input_pedido.value > 0 || p1_input_pedido_final.value > 0){
+            ref.tamanhos.push({
+                id_tamanho: 2,
+                quantidade_pedido: p1_input_pedido.value,
+                quantidade_final: p1_input_pedido_final.value
+            })
+        }
+        if(m2_input_pedido.value > 0 || m2_input_pedido_final.value > 0){
+            ref.tamanhos.push({
+                id_tamanho: 3,
+                quantidade_pedido: rn_input_pedido.value,
+                quantidade_final: rn_input_pedido_final.value
+            })
+        }
+
+        if(g3_input_pedido.value > 0){}
+
+        if(g3_input_pedido_final.value > 0){}
+
+    }
+    function createElement(id,element,className=null,innerHTML=null,type=null,child= null){
+        let aux = document.createElement(element)
+            aux.id = id
+            aux.className = className
+            aux.type = type
+            aux.innerHTML = innerHTML
+            if(child)
+                aux.appendChild(child)
+        return aux;
     }
 </script>
 

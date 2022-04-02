@@ -9,6 +9,12 @@ router.get('/referencias/:id',(req,res,next) =>{
     
     res.status(200).send((referencia))
 })
+router.post('/referencias',(req,res,next) =>{
+    const referencia = req.body
+    service.save(referencia)
+    
+    res.status(201).send('SALVO')
+})
 
 router.get('/referencias',(req,res,next) =>{
     //const referencias = req.body   

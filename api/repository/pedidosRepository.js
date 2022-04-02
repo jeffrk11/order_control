@@ -1,6 +1,7 @@
 const DB = require('../db/db.js')
 
 
+
 module.exports = {
     //get all pedidos
     findAll: function(){
@@ -22,20 +23,18 @@ module.exports = {
             return e.id === id
         })
     },
-    //save one 
+    //insert one 
+    insert: function(pedido){
+        DB.insert('pedidos',pedido)
+    },
     save: function(pedido){
-        const pedidos = DB.get('pedidos')
-        const ped_ref = DB.get('pedidos_referencias')
-        //salvando pedidos referencias
-        if(pedido.referencias !== undefined){
-            pedido.referencias.forEach(e => { ped_ref.push(e) })
-            DB.save('../db/pedidos/pedidos_referencias.json',ped_ref)
-        }
-        //salvando pedido
-        //limpando obj
-        delete pedido.referencias
-        pedidos.push(pedido);
-        DB.save('../db/pedidos/pedidos.json',pedidos)
+        DB.save('pedidos',pedido)
+    },
+    insertPedidoReferencia(pedidoReferencia){
+        DB.insert('pedidos_referencias',pedidoReferencia)
+    },
+    savePedidoReferencia(pedidoReferencia){
+        DB.save('pedidos_referencias',pedidoReferencia)
     },
     //delete a pedido
     delete: function(id){
@@ -58,12 +57,12 @@ module.exports = {
             //deletar tudo antes
             ped_ref = ped_ref.filter(e => {return e.id_pedido !== pedido.id  })
             pedido.referencias.forEach(e => { ped_ref.push(e) })
-            DB.save('../db/pedidos/pedidos_referencias.json',ped_ref)
+            DB.save('pedidos_referencias',ped_ref)
         }
         //limpando objeto
         delete pedido.referencias
         pedidos = pedidos.map( e=>{ return e.id === pedido.id ? pedido : e})
-        DB.save('../db/pedidos/pedidos.json',pedidos)
+        DB.save('pedidos',pedidos)
     }
 
 }

@@ -21,6 +21,12 @@ class DB {
                             tipos: tipos_json,
                             estilos: estilos_json
                         }
+        this.dirs = {
+                        referencias : '../db/referencias/referencias.json',
+                        pedidos: '../db/pedidos/pedidos.json',
+                        pedidos_referencias : '../db/pedidos/pedidos_referencias.json'
+                        
+                    }
     }
 
     get(table) {
@@ -37,14 +43,25 @@ class DB {
         )
     }
 
-    save(table_dir,data){
+    save(table,data){
         fs.writeFile(
-            path.join(__dirname,table_dir),
+            path.join(__dirname,this.dirs[table]),
             JSON.stringify(data,null,4),
             err => {
                 if(err) throw err
             }
         )
+    }
+
+    insert(table,data){
+        const json = this.get(table)
+        //se for array colcoa um por um
+        if(Array.isArray(data))
+            data.forEach(e =>{json.push(e)})
+        else
+            json.push(data)
+        
+        this.save(this.dirs[table],json)
     }
 }
 
