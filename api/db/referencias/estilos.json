@@ -1,0 +1,34 @@
+[
+        {
+            "id": 1,
+            "descricao": "FRASES"
+        },
+        {
+            "id": 2,
+            "descricao": "DESENHO"
+        },
+        {
+            "id": 3,
+            "descricao": "TERMO"
+        },
+        {
+            "id": 4,
+            "descricao": "BORDADO"
+        },
+        {
+            "id": 5,
+            "descricao": "LISTRADO DEGRADE"
+        },
+        {
+            "id": 6,
+            "descricao": "LISTRADO"
+        },
+        {
+            "id": 7,
+            "descricao": "MANGAS COLORIDA"
+        },
+        {
+            "id": 8,
+            "descricao": "SAIA"
+        }
+]

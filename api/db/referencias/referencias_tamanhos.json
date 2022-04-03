@@ -1,0 +1,47 @@
+
+    [
+        {
+            "id_tamanho": 1,
+            "id_referencia": 16
+        },
+        {
+            "id_tamanho": 2,
+            "id_referencia": 16
+        },
+        {
+            "id_tamanho": 3,
+            "id_referencia": 16
+        },
+        {
+            "id_tamanho": 4,
+            "id_referencia": 16
+        },
+        {
+            "id_tamanho": 1,
+            "id_referencia": 17
+        },
+        {
+            "id_tamanho": 2,
+            "id_referencia": 17
+        },
+        {
+            "id_tamanho": 3,
+            "id_referencia": 17
+        },
+        {
+            "id_tamanho": 4,
+            "id_referencia": 1
+        },
+        {
+            "id_tamanho": 2,
+            "id_referencia": 1
+        },
+        {
+            "id_tamanho": 3,
+            "id_referencia": 1
+        },
+        {
+            "id_tamanho": 4,
+            "id_referencia": 1
+        }
+    ]

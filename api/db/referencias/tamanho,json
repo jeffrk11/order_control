@@ -1,0 +1,32 @@
+{
+    "tamanhos":[
+        {
+            "id": 1,
+            "descricao": "RN"
+        },
+        {
+            "id": 2,
+            "descricao": "P"
+        },
+        {
+            "id": 3,
+            "descricao": "M"
+        },
+        {
+            "id": 4,
+            "descricao": "G"
+        },
+        {
+            "id": 5,
+            "descricao": "1"
+        },
+        {
+            "id": 6,
+            "descricao": "2"
+        },
+        {
+            "id": 7,
+            "descricao": "3"
+        }
+    ]
+}
