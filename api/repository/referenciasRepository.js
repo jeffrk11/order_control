@@ -1,7 +1,7 @@
 const DB = require('../db/db.js')
 
 module.exports = {
-    save: function(ref){
+    insert: function(ref){
         DB.insert('referencias',ref)
     },
     //get one by id

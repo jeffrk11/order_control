@@ -9,6 +9,13 @@ router.get('/pedidos',(req,res,next) =>{
     res.status(200).send(JSON.stringify(pedidos))
 })
 
+router.post('/pedidos',(req,res) =>{
+    const pedido = req.body
+    console.log(pedido)
+    service.insert(pedido)
+    res.status(201).send("CRIADO COM SUCESSO")
+})
+
 router.get('/pedidos/:id',(req,res,next) =>{
     const id = parseInt(req.params.id)
     const pedido = service.findById(id)
@@ -17,11 +24,7 @@ router.get('/pedidos/:id',(req,res,next) =>{
     res.status(200).send((pedido))
 })
 
-router.post('/pedidoss',(req,res,next) =>{
-    const pedido = req.body
-    service.save(pedido)
-    res.status(200).send("CRIADO COM SUCESSO")
-})
+
 
 router.delete('/pedidos/:id',(req,res,next) =>{
     const id = parseInt(req.params.id)

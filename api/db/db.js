@@ -61,7 +61,7 @@ class DB {
         else
             json.push(data)
         
-        this.save(this.dirs[table],json)
+        this.save(table,json)
     }
 }
 

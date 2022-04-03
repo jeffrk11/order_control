@@ -24,10 +24,10 @@ function montarReferencia(id){
 }
 
 module.exports = {
-    save: function(ref){
+    insert: function(ref){
         if(repo.findById(ref.id))
             throw new BusinessException(404,"REFERENCIA JA EXISTE COM ESSE CODIGO",ref.id)
-        repo.save(ref)
+        repo.insert(ref)
     },
     findById: function(id){
         const ref = repo.findById(id)

@@ -59,7 +59,7 @@ module.exports = {
             throw new BusinessException(404,"PEDIDO NAO EXISTE COM ESSE CODIGO")
         }
     },
-    save: function (pedido) {
+    insert: function (pedido) {
         validateRef(pedido.referencias)
         //montando objeto pedido_referencia para salvar
         if(repo.findById(pedido.id) === undefined){

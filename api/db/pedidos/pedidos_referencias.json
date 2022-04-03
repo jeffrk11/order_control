@@ -34,5 +34,23 @@
                 "quantidade_final": 0
             }
         }
+    },
+    {
+        "id_pedido": 1,
+        "id_referencia": 2,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": 10,
+                "quantidade_final": 0
+            },
+            "m": {
+                "quantidade_pedido": 10,
+                "quantidade_final": 0
+            },
+            "g": {
+                "quantidade_pedido": 10,
+                "quantidade_final": 0
+            }
+        }
     }
 ]
