@@ -11,10 +11,10 @@ const rotasReferencia = require('../controller/referenciasController')
 const frontPedidos = require('../front/pedidos/pedidos')
 const frontReferencias = require('../front/referencias/referencia')
 
-app.set('view engine', 'ejs');
 //app.set('views', '../views');
-app.use(express.static(path.join(__dirname,'../views')))
+app.use(express.static('public'))
 
+app.set('view engine', 'ejs');
 
 app.use(bodyparser.urlencoded({extended: false})) //dados simples
 app.use(bodyparser.json()) //apenas aceita json 

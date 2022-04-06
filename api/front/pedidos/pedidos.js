@@ -18,6 +18,12 @@ router.get('/edicao/pedido/:id',(req,res,next) => {
     // })
     const referencias = ref_service.findAll()
     //manda o pedido para o front
-    res.render(path.join(__dirname,'../../views/pedidos/cadastrar.ejs'), { pedido:pedido, referencias:referencias });
+    res.render(path.join(__dirname,'../../views/partials/esqueleto.ejs'),
+        {
+            content: '../pedidos/cadastrar.ejs',
+            pedido:pedido,
+            referencias:referencias
+        });
+    //res.render(path.join(__dirname,'../../views/pedidos/cadastrar.ejs'), { pedido:pedido, referencias:referencias });
 })
 module.exports = router
