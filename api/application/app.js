@@ -12,7 +12,7 @@ const frontPedidos = require('../front/pedidos/pedidos')
 const frontReferencias = require('../front/referencias/referencia')
 
 //app.set('views', '../views');
-app.use(express.static('public'))
+app.use(express.static(__dirname+'/../views'))
 
 app.set('view engine', 'ejs');
 
