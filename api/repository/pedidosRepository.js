@@ -44,8 +44,8 @@ module.exports = {
         ped_ref = ped_ref.filter(e => {return e.id_pedido !== id })
         pedidos = pedidos.filter(e => {return e.id !== id})
         //salva sem os deletados
-        DB.save('../db/pedidos/pedidos.json',pedidos)
-        DB.save('../db/pedidos/pedidos_referencias.json',ped_ref) 
+        DB.save('pedidos',pedidos)
+        DB.save('pedidos_referencias',ped_ref) 
     },
     //update a pedido
     update: function(pedido){

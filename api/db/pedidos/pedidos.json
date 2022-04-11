@@ -3,12 +3,74 @@
         "id": 5,
         "representante": "daniela",
         "cliente": "jeef",
-        "data_entrega": "10/10/2022"
+        "data_entrega": "10/10/2022",
+        "referencias": [
+            {
+                "id_pedido": 5,
+                "id_referencia": 1,
+                "tamanhos": {
+                    "p": {
+                        "quantidade_pedido": 10,
+                        "quantidade_final": 0
+                    },
+                    "m": {
+                        "quantidade_pedido": 10,
+                        "quantidade_final": 0
+                    },
+                    "g": {
+                        "quantidade_pedido": 10,
+                        "quantidade_final": 0
+                    }
+                },
+                "referencia": {
+                    "id": 1,
+                    "descricao": "Body M/L Suedine P/G Bordado",
+                    "tipo": "BODY",
+                    "estilo": "BORDADO",
+                    "tecido": "SUEDINE",
+                    "tamanhos": {
+                        "p": 0,
+                        "m": 0,
+                        "g": 0
+                    }
+                }
+            },
+            {
+                "id_pedido": 5,
+                "id_referencia": 2,
+                "tamanhos": {
+                    "p": {
+                        "quantidade_pedido": 5,
+                        "quantidade_final": 0
+                    },
+                    "m": {
+                        "quantidade_pedido": 5,
+                        "quantidade_final": 0
+                    },
+                    "g": {
+                        "quantidade_pedido": 5,
+                        "quantidade_final": 0
+                    }
+                },
+                "referencia": {
+                    "id": 2,
+                    "descricao": "Body M/L Suedine P/G C/ Termo",
+                    "tipo": "BODY",
+                    "estilo": "TERMO",
+                    "tecido": "SUEDINE",
+                    "tamanhos": {
+                        "p": 0,
+                        "m": 0,
+                        "g": 0
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 1,
-        "representante": "afonso",
-        "cliente": "afonsinho",
-        "data_entrega": "10/05/22"
+        "representante": "daniela",
+        "cliente": "jeef",
+        "data_entrega": "10/10/2022"
     }
 ]

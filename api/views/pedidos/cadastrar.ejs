@@ -6,43 +6,29 @@
                 <!-- pedido codigo -->
                 <div class="col-2">
                     <label for="id" class="form-label"><b>Pedido</b></label>
-                    <div class="container_relative">
-                        <!-- The tooltip content -->
-                        <div class="container_content">
-                            <tbody>
-
-                            </tbody>
-                        </div>
-                        <!-- The tooltip arrow -->
-                        <div class="container_arrow"></div>
-                        
-                        <% if (pedido) { %>
-                            <h2><%= pedido.id %></h2>
-                        <% } else {%>
-                            <input type="number" class="form-control" id="id" value="">
-                        <% } %> 
-                    </div>
+                    <input type="number" class="form-control" id="id_pedido" value="<%= parseInt(pedido.id) %>">
                 </div>
                 <!-- representante nome -->
                 <div class="col-3">
                     <label for="representante" class="form-label"><b>Representante</b></label>
-                    <input type="text" class="form-control" id="representante" value=" <%= pedido.representante %> ">
+                    <input type="text" class="form-control" id="representante" value="<%= pedido.representante %>">
                 </div>
                 <!-- cliente nome  -->
                 <div class="col-3">
                     <label for="cliente" class="form-label"><b>Cliente</b></label>
-                    <input type="text" class="form-control" id="cliente" value=" <%= pedido.cliente %> " >
+                    <input type="text" class="form-control" id="cliente" value="<%= pedido.cliente %>" >
                 </div>
                 <!-- data entrega  -->
                 <div class="col-3">
                     <label for="data" class="form-label"><b>Data</b></label>
-                    <input type="text" class="form-control" id="txt_data" value=" <%= pedido.data_entrega %> ">
+                    <input type="text" class="form-control" id="txt_entrega" value="<%= pedido.data_entrega %>">
                 </div>
             </div>
             <!-- botoes -->
             <div class="row m-2 p-2 justify-content-end" style="position: relative;" >
-                <button type="button" class="m-2 w-auto btn btn-outline-success"><b>Salvar</b></button>
-                <button id="btn_cancelar" onclick="pop()" type="button" class="m-2 w-auto btn btn-outline-danger"><b>Cancelar</b></button>
+                <!-- salvar pedido -->
+                <button type="button" onclick="save_pedido()" data-bs-toggle="modal" data-bs-target="#modal_mensagem" id="btn_salvar_pedido"class="m-2 w-auto btn btn-outline-success"><b>Salvar</b></button>
+                <button id="btn_cancelar"  onclick="pop()" type="button" class="m-2 w-auto btn btn-outline-danger"><b>Cancelar</b></button>
             </div>
             <!-- adicionar Ref -->
             <div class="row m-2 p-2 justify-content-end">
@@ -75,6 +61,21 @@
                 </table>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal_line" tabindex="-1" aria-labelledby="modal_lineLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-body" id="modal_body">
+            
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" id="btn_modal_save" data-bs-dismiss="modal" class="btn btn-primary">Salvar</button>
+        </div>
+    </div>
     </div>
 </div>
 <!-- script q faz chamada no back -->

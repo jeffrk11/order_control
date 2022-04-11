@@ -1,37 +1,35 @@
 [
     {
-        "id_pedido": 5,
+        "id_pedido": 1,
         "id_referencia": 1,
         "tamanhos": {
+            "rn": {
+                "quantidade_pedido": "1",
+                "quantidade_final": "2"
+            },
             "p": {
-                "quantidade_pedido": 10,
-                "quantidade_final": 0
+                "quantidade_pedido": "3",
+                "quantidade_final": "4"
             },
             "m": {
-                "quantidade_pedido": 10,
-                "quantidade_final": 0
+                "quantidade_pedido": "5",
+                "quantidade_final": "6"
             },
             "g": {
-                "quantidade_pedido": 10,
-                "quantidade_final": 0
-            }
-        }
-    },
-    {
-        "id_pedido": 5,
-        "id_referencia": 2,
-        "tamanhos": {
-            "p": {
-                "quantidade_pedido": 5,
-                "quantidade_final": 0
+                "quantidade_pedido": "7",
+                "quantidade_final": "8"
             },
-            "m": {
-                "quantidade_pedido": 5,
-                "quantidade_final": 0
+            "t1": {
+                "quantidade_pedido": "9",
+                "quantidade_final": "10"
             },
-            "g": {
-                "quantidade_pedido": 5,
-                "quantidade_final": 0
+            "t2": {
+                "quantidade_pedido": "11",
+                "quantidade_final": "12"
+            },
+            "t3": {
+                "quantidade_pedido": "13",
+                "quantidade_final": "14"
             }
         }
     },
@@ -40,15 +38,15 @@
         "id_referencia": 2,
         "tamanhos": {
             "p": {
-                "quantidade_pedido": 10,
+                "quantidade_pedido": 0,
                 "quantidade_final": 0
             },
             "m": {
-                "quantidade_pedido": 10,
+                "quantidade_pedido": 0,
                 "quantidade_final": 0
             },
             "g": {
-                "quantidade_pedido": 10,
+                "quantidade_pedido": 0,
                 "quantidade_final": 0
             }
         }

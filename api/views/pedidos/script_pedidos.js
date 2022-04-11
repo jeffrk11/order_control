@@ -6,9 +6,48 @@
     //         .catch(error => console.log(error))
     // })
 
+   function  pop(){
+        
+   }
+
     //page load
     window.onload = function() {
+        
         draw_table()
+    }
+    let aux;
+    async function save_pedido(){
+        //setando valores nao dinamicos
+        pedido.id = parseInt(document.getElementById('id_pedido').value);
+        pedido.cliente = document.getElementById('cliente').value;
+        pedido.representante = document.getElementById('representante').value;
+        pedido.data_entrega = document.getElementById('txt_entrega').value;
+
+        let myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+        let raw = JSON.stringify(pedido)
+
+        var requestOptions = {
+            method: 'PUT',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+        };
+        fetch("/pedidos", requestOptions)
+            .then(response => {
+                return { status: response.status,
+                            response: response.text()}
+            })
+            .then(result => {
+                //setando
+                result.response.then( val => {
+                    if(result.status == 404)
+                        document.getElementById('txt_mensagem_modal_aviso').innerText = JSON.parse(val).erro.mensagem;
+                    if(result.status == 200)
+                        document.getElementById('txt_mensagem_modal_aviso').innerText = val;
+                })
+            })
+            .catch(error => console.log('error', error));
     }
     
     //adiciona ao json global
@@ -66,7 +105,7 @@
             //total
             let total = 0 
             for(let key in e.tamanhos){ //loop nas chaves do objeto tamannhos
-                total += e.tamanhos[key].quantidade_pedido
+                total += parseInt(e.tamanhos[key].quantidade_pedido)
             }
             tr.insertCell().appendChild(document.createTextNode(total))
             let div_container = document.createElement('div')
@@ -145,7 +184,7 @@
                 div_btns.appendChild(btn_del)
             for(let i = 0; i < tr.children.length; i++){
                 if(i > 2)
-                    tr.children[i].width = "10%"
+                    tr.children[i].width = "7%"
             }
             
         });
@@ -251,7 +290,6 @@
     }
     function setValuesModal(ref){
         //values
-        console.log(ref)
         let rn_tamanho = ref.tamanhos.rn
         let p_tamanho = ref.tamanhos.p
         let m_tamanho = ref.tamanhos.m
@@ -260,7 +298,6 @@
         let t2_tamanho = ref.tamanhos.t2
         let t3_tamanho =ref.tamanhos.t3
         //rn
-        console.log(ref)
         let rn_input_pedido = document.getElementById('rn_input_pedido')
             rn_input_pedido.value = rn_tamanho ? rn_tamanho.quantidade_pedido : 0
         let rn_input_pedido_final = document.getElementById('rn_input_pedido_final')
