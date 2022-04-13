@@ -90,8 +90,9 @@ module.exports = {
     update: function(pedido){
         validateRef(pedido.referencias)
         //removendo pedidos referencias
-        let ped_refs = repo.findAllPedidosReferenciasByPedidoId(pedido.id)
+        let ped_refs = repo.findAllPedidosReferencias()
                                 .filter(e => { return e.id_pedido !== pedido.id})
+
         //setando alterados
             pedido.referencias.forEach(e => {
                 let pedido_referencia = {};
@@ -107,6 +108,7 @@ module.exports = {
             delete pedido.referencias
             pedidos.push(pedido)
             //depois de todas validacoes salvar
+
             repo.savePedidoReferencia(ped_refs)
             repo.save(pedidos)
         }else{

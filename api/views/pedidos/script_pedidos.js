@@ -6,13 +6,10 @@
     //         .catch(error => console.log(error))
     // })
 
-   function  pop(){
-        
-   }
-
     //page load
     window.onload = function() {
-        
+        document.getElementById('regiao').value = pedido.regiao
+        document.getElementById('situacao').value = pedido.situacao
         draw_table()
     }
     let aux;
@@ -22,6 +19,8 @@
         pedido.cliente = document.getElementById('cliente').value;
         pedido.representante = document.getElementById('representante').value;
         pedido.data_entrega = document.getElementById('txt_entrega').value;
+        pedido.situacao = document.getElementById('situacao').value;
+        pedido.regiao = document.getElementById('regiao').value;
 
         let myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");

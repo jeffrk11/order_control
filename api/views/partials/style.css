@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
+:root {
+  --cor-cinza-claro: #A7B3BC;
+  --cor-vermelho-claro: #f8c4c4;
+  --cor-amarelo-claro: #f7f8c4;
+}
+
 * {
   box-sizing: border-box;
 }
+
+
 
 html {
   font-size: 85.5%;
@@ -79,10 +87,32 @@ p input {
   width: auto;
 }
 
+.border-5{
+  border-radius: 20px;
+}
+
+.color-transp-forte{
+  color: rgba(0, 0, 0, .35)
+}
+.p-45{
+  padding: 2rem;
+}
+.bg-cinza-claro{
+  background-color: var(--cor-cinza-claro);
+}
+.bg-vermelho-claro{
+  background-color: var(--cor-vermelho-claro);
+}
+.bg-amarelo-claro{
+  background-color: var(--cor-amarelo-claro);
+}
+.color-cinza-claro{
+  color: var(--cor-cinza-claro);
+}
+
 .custom-body{
   font-family: 'Quicksand', sans-serif;
-  
-  background: #a1c9ee;
+  background: #ece4f0;
 }
 
 .input-transp{
@@ -105,9 +135,9 @@ background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%); */
 
 h1 {
   text-align:center;
-  color: white;
+  /* color: white; */
   
-  font-size: 3.4rem;
+  font-size: 3.6 rem;
 }
 
 /* input {

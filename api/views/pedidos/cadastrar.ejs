@@ -2,7 +2,7 @@
 <div class=" row p-4 m-0 ">
     <div class="container">
         <form>
-            <div class=" row m-0 p-0 justify-content-between">
+            <div class=" row m-2 p-0">
                 <!-- pedido codigo -->
                 <div class="col-2">
                     <label for="id" class="form-label"><b>Pedido</b></label>
@@ -22,6 +22,28 @@
                 <div class="col-3">
                     <label for="data" class="form-label"><b>Data</b></label>
                     <input type="text" class="form-control" id="txt_entrega" value="<%= pedido.data_entrega %>">
+                </div>
+            </div>
+            <div class=" row m-2 p-0">
+                <!-- regiao -->
+                <div class="col-3">
+                    <label for="regiao" class="form-label"><b>Região</b></label>
+                    <select class="form-select" id="regiao">
+                        <option value="sudeste">Sudeste</option>
+                        <option value="norte">Norte</option>
+                        <option value="nordeste">Nordeste</option>
+                        <option value="centro-oeste">Centro-Oeste</option>
+                        <option value="sul">Sul</option>
+                    </select>
+                </div>
+                <!-- situacao -->
+                <div class="col-3">
+                    <label for="situacao" class="form-label"><b>Situação</b></label>
+                    <select class="form-select" id="situacao">
+                        <option value="aprovada">Aprovado</option>
+                        <option value="pendente">Pendente</option>
+                        <option value="cancelado">Cancelado</option>
+                    </select>
                 </div>
             </div>
             <!-- botoes -->

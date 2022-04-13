@@ -10,6 +10,7 @@ const rotasPedido = require('../controller/pedidosController')
 const rotasReferencia = require('../controller/referenciasController')
 const frontPedidos = require('../front/pedidos/pedidos')
 const frontReferencias = require('../front/referencias/referencia')
+const frontDashboard = require('../front/dashboard/dashboard')
 
 //app.set('views', '../views');
 app.use(express.static(__dirname+'/../views'))
@@ -42,6 +43,7 @@ app.use(rotasPedido)
 app.use(rotasReferencia)
 app.use(frontPedidos)
 app.use(frontReferencias)
+app.use(frontDashboard)
 
 app.get('/',(req, res) => {
     res.render(path.join(__dirname,'../views/index.ejs'));
