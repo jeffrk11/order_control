@@ -5,11 +5,12 @@
     //         .then( resp => console.log(resp))
     //         .catch(error => console.log(error))
     // })
-
     //page load
     window.onload = function() {
-        document.getElementById('regiao').value = pedido.regiao
-        document.getElementById('situacao').value = pedido.situacao
+        if(pedido.regiao)
+            document.getElementById('regiao').value = pedido.regiao;
+        if(pedido.situacao)
+            document.getElementById('situacao').value = pedido.situacao;
         draw_table()
     }
     let aux;
@@ -22,32 +23,44 @@
         pedido.situacao = document.getElementById('situacao').value;
         pedido.regiao = document.getElementById('regiao').value;
 
-        let myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/json");
-        let raw = JSON.stringify(pedido)
+        if(this.validate_pedido(pedido)){
+            let myHeaders = new Headers();
+                myHeaders.append("Content-Type", "application/json");
 
-        var requestOptions = {
-            method: 'PUT',
-            headers: myHeaders,
-            body: raw,
-            redirect: 'follow'
-        };
-        fetch("/pedidos", requestOptions)
-            .then(response => {
-                return { status: response.status,
-                            response: response.text()}
-            })
-            .then(result => {
-                //setando
-                result.response.then( val => {
-                    if(result.status == 404)
-                        document.getElementById('txt_mensagem_modal_aviso').innerText = JSON.parse(val).erro.mensagem;
-                    if(result.status == 200)
-                        document.getElementById('txt_mensagem_modal_aviso').innerText = val;
+            let raw = JSON.stringify(pedido)
+
+            var requestOptions = {
+                method: novo ? 'POST' : 'PUT',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+            fetch("/pedidos", requestOptions)
+                .then(response => {
+                    return {    status: response.status,
+                                response: response.text()}
                 })
-            })
-            .catch(error => console.log('error', error));
+                .then(result => {
+                    //setando
+                    result.response.then( val => {
+                        if(result.status == 404)
+                            document.getElementById('txt_mensagem_modal_aviso').innerText = JSON.parse(val).erro.mensagem;
+                        if(result.status == 200 || result.status == 201)
+                            document.getElementById('txt_mensagem_modal_aviso').innerText = val;
+                    })
+                })
+                .catch(error => console.log('error', error));
+        }else{
+            document.getElementById('txt_mensagem_modal_aviso').innerText = "PEDIDO INVÁLIDO, VERIFIQUE OS CAMPOS";
+        }
     }
+    //validacao salvar
+    function validate_pedido(pedido){
+        //se algum desses campos estiverem vazios, entao false
+        if(!pedido.id || !pedido.cliente || !pedido.representante || !pedido.data_entrega)
+            return false
+        return true
+    }   
     
     //adiciona ao json global
     function table_add_ref(){

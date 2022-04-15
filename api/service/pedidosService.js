@@ -7,7 +7,7 @@ function BusinessException(status=500,message,body){
     this.name = "BusinessException";
     this.status = status
 }
-
+//montando para mostrar
 function addReferencias(pedidos){
     //const ped_ref = repo.findAllPedidosReferencias();
 
@@ -32,7 +32,7 @@ function addReferencias(pedidos){
     
 }
 
-function validateRef(referencias){
+function validateRef(referencias = []){
     let refs = []
     referencias.forEach(e => {
         if(ref_repo.findById(e.id_referencia) == undefined){
@@ -40,6 +40,24 @@ function validateRef(referencias){
         }
     })
     if(refs.length > 0) throw new BusinessException(404,"REFERENCIA INEXISTENTE",refs)
+}
+
+function montar_pedido_referencia(pedido){
+    let list_ped_ref = [];
+    //se nao exisitr esse campo dentro do pedido, setar como lista vazia
+    if(!pedido.referencias)
+        pedido.referencias = [];
+
+    pedido.referencias.forEach(e => {
+        let pedido_referencia = {};
+            pedido_referencia.id_pedido = pedido.id;
+            pedido_referencia.id_referencia = e.id_referencia;
+            pedido_referencia.tamanhos = e.tamanhos;
+        //adicionando o pedido ref a lista para salvar
+        list_ped_ref.push(pedido_referencia);
+    })
+
+    return list_ped_ref;
 }
 
 module.exports = {
@@ -63,16 +81,7 @@ module.exports = {
         validateRef(pedido.referencias)
         //montando objeto pedido_referencia para salvar
         if(repo.findById(pedido.id) === undefined){
-            let list_ped_ref = [];
-            pedido.referencias.forEach(e => {
-                let pedido_referencia = {};
-                    pedido_referencia.id_pedido = pedido.id;
-                    pedido_referencia.id_referencia = e.id_referencia;
-                    pedido_referencia.tamanhos = e.tamanhos;
-                //adicionando o pedido ref a lista para salvar
-                list_ped_ref.push(pedido_referencia);
-            })
-            repo.insertPedidoReferencia(list_ped_ref)
+            repo.insertPedidoReferencia(montar_pedido_referencia(pedido))
             //salvar objeto do pedido sem as referencias
             delete pedido.referencias
             repo.insert(pedido)

@@ -14,5 +14,61 @@
         "data_entrega": "0000",
         "situacao": "cancelado",
         "regiao": "centro-oeste"
+    },
+    {
+        "id": 3,
+        "cliente": "jefao",
+        "representante": "jefinho",
+        "data_entrega": "10/10/10",
+        "situacao": "cancelado",
+        "regiao": "sudeste",
+        "referencias": [
+            {
+                "id_pedido": 3,
+                "id_referencia": 1,
+                "tamanhos": {
+                    "p": {
+                        "quantidade_pedido": 0,
+                        "quantidade_final": 0
+                    },
+                    "m": {
+                        "quantidade_pedido": 0,
+                        "quantidade_final": 0
+                    },
+                    "g": {
+                        "quantidade_pedido": 0,
+                        "quantidade_final": 0
+                    }
+                },
+                "referencia": {
+                    "id": 1,
+                    "descricao": "Body M/L Suedine P/G Bordado",
+                    "tipo": "BODY",
+                    "estilo": "BORDADO",
+                    "tecido": "SUEDINE",
+                    "tamanhos": {
+                        "p": 0,
+                        "m": 0,
+                        "g": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "cliente": "danao",
+        "representante": "daniela",
+        "data_entrega": "20",
+        "situacao": "aprovada",
+        "regiao": "sudeste"
+    },
+    {
+        "id": 6,
+        "cliente": "teste",
+        "representante": "jef",
+        "data_entrega": "teste",
+        "situacao": "aprovada",
+        "regiao": "sudeste"
     }
 ]

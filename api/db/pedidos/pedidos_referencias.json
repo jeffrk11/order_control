@@ -50,5 +50,71 @@
                 "quantidade_final": 0
             }
         }
+    },
+    {
+        "id_pedido": 3,
+        "id_referencia": 1,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "m": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "g": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            }
+        },
+        "referencia": {
+            "id": 1,
+            "descricao": "Body M/L Suedine P/G Bordado",
+            "tipo": "BODY",
+            "estilo": "BORDADO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 0,
+                "m": 0,
+                "g": 0
+            }
+        }
+    },
+    {
+        "id_pedido": 6,
+        "id_referencia": 1,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "m": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "g": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            }
+        }
+    },
+    {
+        "id_pedido": 6,
+        "id_referencia": 2,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "m": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "g": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            }
+        }
     }
 ]

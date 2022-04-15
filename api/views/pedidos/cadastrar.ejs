@@ -6,6 +6,7 @@
                 <!-- pedido codigo -->
                 <div class="col-2">
                     <label for="id" class="form-label"><b>Pedido</b></label>
+                    
                     <input type="number" class="form-control" id="id_pedido" value="<%= parseInt(pedido.id) %>">
                 </div>
                 <!-- representante nome -->
@@ -107,5 +108,6 @@
 <script type="text/javascript">
     //variaveis passadas pelo back, dessa forma para o ejs renderizar
     let pedido = JSON.parse('<%- JSON.stringify(pedido) %>')
+    let novo = JSON.parse('<%- JSON.stringify(novo) %>')
     let referencias = JSON.parse('<%- JSON.stringify(referencias) %>')
 </script>
