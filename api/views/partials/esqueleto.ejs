@@ -14,7 +14,7 @@
                 <!-- linha de cima, onde esta o perfil-->
                 <div class="row p-2 m-0 w-100" style="background-color: #F46983;">
                     <div class="col-3">
-                        home > dashboard
+                        <h3 style="color :white" id="titulo_pagina"></h3>
                     </div>
                     <div class="col-9">
                         <div class="d-flex justify-content-end">
@@ -38,3 +38,10 @@
 
 </body>
 </html>
+<script>
+    let titulo = document.getElementById('titulo_pagina')
+    let path = window.location.pathname
+    path = path.split('/').join(' ').trim()
+    titulo.innerText = path
+    titulo.style.textTransform = 'capitalize'
+</script>
