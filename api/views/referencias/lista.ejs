@@ -1,0 +1,32 @@
+<div class="d-flex flex-column w-100">
+    <div class="d-flex m-2 flex-column border-5 p-4 bg-white w-100">
+        <h5>Filtro</h5>
+
+    </div>
+    <div class="d-flex m-2 border-5 p-4 bg-white w-100">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th width="1%" scope="col">Codigo</th>
+                    <th width="40%"scope="col">Descrição</th>
+                    <th width="2%" scope="col">RN</th>
+                    <th width="2%" scope="col">P</th>
+                    <th width="2%" scope="col">M</th>
+                    <th width="2%" scope="col">G</th>
+                    <th width="2%" scope="col">1</th>
+                    <th width="2%" scope="col">2</th>
+                    <th width="2%" scope="col">3</th>
+                    <th width="10%" scope="col">Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tb">
+                <!-- dinamicamente pegando do back, se for ediçao de pedido -->
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" src="/referencias/script_lista.js"></script>
+<script type="text/javascript">
+    //variaveis passadas pelo back, dessa forma para o ejs renderizar
+    let referencias = JSON.parse('<%- JSON.stringify(referencias) %>')
+</script>

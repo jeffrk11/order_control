@@ -15,7 +15,11 @@ router.post('/referencias',(req,res,next) =>{
     
     res.status(201).send('SALVO')
 })
-
+router.delete('/referencias/:id',(req,res,next) =>{
+    const id = parseInt(req.params.id)
+    service.delete(id)
+    res.status(200).send("DELETADO COM SUCESSO")
+})
 router.get('/referencias',(req,res,next) =>{
     //const referencias = req.body   
     res.status(200).send(service.findAll())

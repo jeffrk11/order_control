@@ -47,9 +47,9 @@
                     "estilo": "BORDADO",
                     "tecido": "SUEDINE",
                     "tamanhos": {
-                        "p": 0,
-                        "m": 0,
-                        "g": 0
+                        "p": 10,
+                        "m": 20,
+                        "g": 30
                     }
                 }
             },
@@ -77,9 +77,9 @@
                     "estilo": "TERMO",
                     "tecido": "SUEDINE",
                     "tamanhos": {
-                        "p": 0,
-                        "m": 0,
-                        "g": 0
+                        "p": 40,
+                        "m": 50,
+                        "g": 60
                     }
                 }
             }
@@ -126,9 +126,9 @@
                     "estilo": "BORDADO",
                     "tecido": "SUEDINE",
                     "tamanhos": {
-                        "p": 0,
-                        "m": 0,
-                        "g": 0
+                        "p": 10,
+                        "m": 20,
+                        "g": 30
                     }
                 }
             }
@@ -175,9 +175,9 @@
                     "estilo": "BORDADO",
                     "tecido": "SUEDINE",
                     "tamanhos": {
-                        "p": 0,
-                        "m": 0,
-                        "g": 0
+                        "p": 10,
+                        "m": 20,
+                        "g": 30
                     }
                 }
             },
@@ -205,9 +205,9 @@
                     "estilo": "TERMO",
                     "tecido": "SUEDINE",
                     "tamanhos": {
-                        "p": 0,
-                        "m": 0,
-                        "g": 0
+                        "p": 40,
+                        "m": 50,
+                        "g": 60
                     }
                 }
             }

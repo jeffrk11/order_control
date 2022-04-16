@@ -14,6 +14,15 @@ router.get('/edicao/referencia',(req,res,next) => {
             referencia: {}
         });
 })
+router.get('/referencia/listagem',(req,res,next) => {
+    const referencias = service.findAll()
+    res.render(path.join(__dirname,'../../views/partials/esqueleto.ejs'), 
+    {
+        content: '../referencias/lista.ejs',
+        referencias: referencias
+        
+    });
+})
 router.get('/edicao/referencia/:id',(req,res,next) => {
     const id = parseInt(req.params.id)
     const pedido = service.findById(id)
