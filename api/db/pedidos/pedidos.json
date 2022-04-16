@@ -218,7 +218,7 @@
         "cliente": "b",
         "representante": "a",
         "data_entrega": "c",
-        "situacao": "aprovada",
+        "situacao": "pendente",
         "regiao": "sudeste"
     }
 ]
