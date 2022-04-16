@@ -31,6 +31,18 @@
                 "quantidade_pedido": "13",
                 "quantidade_final": "14"
             }
+        },
+        "referencia": {
+            "id": 1,
+            "descricao": "Body M/L Suedine P/G Bordado",
+            "tipo": "BODY",
+            "estilo": "BORDADO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 0,
+                "m": 0,
+                "g": 0
+            }
         }
     },
     {
@@ -48,6 +60,18 @@
             "g": {
                 "quantidade_pedido": 0,
                 "quantidade_final": 0
+            }
+        },
+        "referencia": {
+            "id": 2,
+            "descricao": "Body M/L Suedine P/G C/ Termo",
+            "tipo": "BODY",
+            "estilo": "TERMO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 0,
+                "m": 0,
+                "g": 0
             }
         }
     },
@@ -97,6 +121,18 @@
                 "quantidade_pedido": 0,
                 "quantidade_final": 0
             }
+        },
+        "referencia": {
+            "id": 1,
+            "descricao": "Body M/L Suedine P/G Bordado",
+            "tipo": "BODY",
+            "estilo": "BORDADO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 0,
+                "m": 0,
+                "g": 0
+            }
         }
     },
     {
@@ -114,6 +150,18 @@
             "g": {
                 "quantidade_pedido": 0,
                 "quantidade_final": 0
+            }
+        },
+        "referencia": {
+            "id": 2,
+            "descricao": "Body M/L Suedine P/G C/ Termo",
+            "tipo": "BODY",
+            "estilo": "TERMO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 0,
+                "m": 0,
+                "g": 0
             }
         }
     }

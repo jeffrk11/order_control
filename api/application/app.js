@@ -13,7 +13,8 @@ const frontReferencias = require('../front/referencias/referencia')
 const frontDashboard = require('../front/dashboard/dashboard')
 
 //app.set('views', '../views');
-app.use(express.static(__dirname+'/../views'))
+app.use(express.static(path.join(__dirname,'/../views')))
+
 
 app.set('view engine', 'ejs');
 

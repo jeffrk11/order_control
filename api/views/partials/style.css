@@ -87,6 +87,10 @@ p input {
   width: auto;
 }
 
+a {
+  font-size: 1 rem;
+}
+
 .border-5{
   border-radius: 20px;
 }
@@ -183,15 +187,18 @@ a {
   display: block;
   
   color: #333;
-  text-decoration: none;  
-  
-  padding: 16px 0;
-  font-size: 1.8rem;
+  text-decoration: none !important;  
   
 }
 
 a:hover {
+  color: #333;
   font-weight: bold;
+  cursor: pointer;
+}
+a:visited, a:active, a:link {
+  color: #333;
+  text-decoration: none;
 }
 
 li:first-child,

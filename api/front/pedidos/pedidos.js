@@ -19,6 +19,15 @@ router.get('/pedido/novo',(req,res,next) => {
         referencias: referencias
     });
 })
+router.get('/pedido/listagem',(req,res,next) => {
+    const pedidos = service.findAll()
+    res.render(path.join(__dirname,'../../views/partials/esqueleto.ejs'), 
+    {
+        content: '../pedidos/lista.ejs',
+        pedidos: pedidos
+        
+    });
+})
 router.get('/pedido/edicao/:id',(req,res,next) => {
     const id = parseInt(req.params.id)
     const pedido = service.findById(id)
@@ -36,4 +45,5 @@ router.get('/pedido/edicao/:id',(req,res,next) => {
         });
     //res.render(path.join(__dirname,'../../views/pedidos/cadastrar.ejs'), { pedido:pedido, referencias:referencias });
 })
+
 module.exports = router

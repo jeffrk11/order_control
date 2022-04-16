@@ -1,10 +1,4 @@
-   //carregando pedidos
-    // document.addEventListener('DOMContentLoaded', function() {
-        
-    //     axios.get('http://localhost:9090/pedidos')
-    //         .then( resp => console.log(resp))
-    //         .catch(error => console.log(error))
-    // })
+
     //page load
     window.onload = function() {
         if(pedido.regiao)
