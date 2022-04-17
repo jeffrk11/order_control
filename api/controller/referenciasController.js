@@ -24,5 +24,10 @@ router.get('/referencias',(req,res,next) =>{
     //const referencias = req.body   
     res.status(200).send(service.findAll())
 })
+router.put('/referencias',(req,res,next) =>{
+    const referencia = req.body
+    service.update(referencia)
+    res.status(200).send("ATUALIZADO COM SUCESSO")
+})
 
 module.exports = router

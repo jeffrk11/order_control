@@ -18,9 +18,17 @@
         "estilo": "TERMO",
         "tecido": "SUEDINE",
         "tamanhos": {
-            "p": 40,
-            "m": 50,
-            "g": 60
+            "p": 10,
+            "m": 10,
+            "g": 10
         }
+    },
+    {
+        "tamanhos": {},
+        "id": 3,
+        "descricao": "teste",
+        "estilo": "teste",
+        "tipo": "teste",
+        "tecido": "tet"
     }
 ]

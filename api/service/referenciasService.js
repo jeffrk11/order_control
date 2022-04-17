@@ -29,6 +29,11 @@ module.exports = {
             throw new BusinessException(404,"REFERENCIA JA EXISTE COM ESSE CODIGO",ref.id)
         repo.insert(ref)
     },
+    update: function(ref){
+        if(!repo.findById(ref.id))
+            throw new BusinessException(404,"REFERENCIA NAO EXISTE COM ESSE CODIGO",ref.id) 
+        repo.update(ref)
+    },
     delete: function(id){
         if(repo.findById(id) !== undefined){
             return repo.delete(id)

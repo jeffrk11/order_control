@@ -54,14 +54,46 @@ function createButton(color, icon_name, onclick){
     let icon = document.createElement('i')
     icon.className = icon_name+' fa-solid p-1'
     icon.style = 'color: #ffffff'
-
+    if(icon_name == 'fa-trash-can'){
+        icon.setAttribute('data-bs-toggle',"modal")
+        icon.setAttribute('data-bs-target',"#modal_mensagem")
+    }
     btn.appendChild(icon)
 
     return btn
 }
 
+function deleteReferencia(id){
+    let myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var requestOptions = {
+            method: 'DELETE',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
+        fetch("/referencias/"+id, requestOptions)
+                .then(response => {
+                    return {    status: response.status,
+                                response: response.text()}
+                })
+                .then(result => {
+                    //setando
+                    result.response.then( val => {
+                        if(result.status == 404)
+                            document.getElementById('txt_mensagem_modal_aviso').innerText = JSON.parse(val).erro.mensagem;
+                        if(result.status == 200 || result.status == 201)
+                            document.getElementById('txt_mensagem_modal_aviso').innerText = val;
+                            referencias =  referencias.filter(e => { return e.id != id})
+                            draw_table();
+                    })
+                })
+                .catch(error => console.log('error', error));
+    
+}
+
 function openReferencia(id){
-    window.location.replace('/pedido/edicao/'+id)
+    window.location.replace('/referencia/edicao/'+id)
 }
 
 function createCell(info){

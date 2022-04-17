@@ -1,3 +1,95 @@
-<div class="row">
-    teste
+<div class="d-flex flex-column m-2 border-5 p-4 bg-white shadow-sm">
+    <div class="d-flex m-2 flex-column border-5 bg-white w-100">
+        <h5>Informações</h5>
+    </div>
+    <div class="d-flex  p-2">
+        <div class="p-4 m-2  ">
+            <div class=" rounded-circle p-4 bg-cinza-claro">
+                <i style="font-size: 2rem;" class=" fa-solid m-1 fa-shirt color-transp-forte"></i>
+            </div>
+        </div>
+        <div class="d-flex flex-column w-100 m-2">
+            <div class="row m-2">
+                <!-- referencia codigo -->
+                <div class="col-2">
+                    <label for="id" class="form-label"><b>Referencia</b></label>
+                    <input type="number" class="form-control" id="id_referencia" value="<%= parseInt(referencia.id) %>">
+                </div>
+                <!-- referencia descricao -->
+                <div class="col-10">
+                    <label for="id" class="form-label"><b>Descrição</b></label>
+                    <input type="text" class="form-control" id="descricao" value="<%= referencia.descricao %>">
+                </div>
+            </div>
+            <div class="row m-2">
+                <!-- referencia tipo -->
+                <div class="col-4">
+                    <label for="id" class="form-label"><b>Tipo</b></label>
+                    <input type="text" class="form-control" id="tipo" value="<%= referencia.tipo %>">
+                </div>
+                <!-- referencia tecido -->
+                <div class="col-4">
+                    <label for="id" class="form-label"><b>Tecido</b></label>
+                    <input type="text" class="form-control" id="tecido" value="<%= referencia.tecido %>">
+                </div>
+                <!-- referencia estilo -->
+                <div class="col-4">
+                    <label for="id" class="form-label"><b>Estilo</b></label>
+                    <input type="text" class="form-control" id="estilo" value="<%= referencia.estilo %>">
+                </div>
+            </div>
+            <div class="row m-2 justify-content-end">
+                <!-- salvar pedido -->
+                <button type="button" onclick="save_referencia()" data-bs-toggle="modal" data-bs-target="#modal_mensagem" id="btn_salvar_pedido"class="m-2 w-auto btn btn-outline-success"><b>Salvar</b></button>
+                <button id="btn_cancelar"  onclick="pop()" type="button" class="m-2 w-auto btn btn-outline-danger"><b>Cancelar</b></button>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="d-flex flex-column m-2 border-5 p-4 bg-white shadow-sm">
+    <div class="d-flex m-2 flex-column border-5 bg-white w-100">
+        <h5>Estoque</h5>
+    </div>
+    <div class="pe-5">
+        <div class="flex-column justify-content-center">
+            <div class="row m-3 justify-content-end">
+                <div class="d-flex col-2">
+                    <h3 class="m-2 w-25">RN:</h3>
+                    <input  type="number" class="w-75 form-control" id="rn" value="<%= referencia.tamanhos.rn %>">
+                </div>
+                <div class="d-flex col-2">
+                    <h3 class="m-2 w-25">P:</h3>
+                    <input  type="number" class="w-75 form-control" id="p" value="<%= referencia.tamanhos.p %>">
+                </div>
+                <div class="d-flex col-2">
+                    <h3 class="m-2 w-25">M:</h3>
+                    <input  type="number" class="w-75 form-control" id="m" value="<%= referencia.tamanhos.m %>">
+                </div>
+                <div class="d-flex col-2">
+                    <h3 class="m-2 w-25">G:</h3>
+                    <input  type="number" class="w-75 form-control" id="g" value="<%= referencia.tamanhos.g %>">
+                </div>
+            </div>
+            <div class="row m-3 justify-content-end">
+                <div class="d-flex col-2">
+                    <h3 class="m-2 w-25">1:</h3>
+                    <input  type="number" class="w-75 form-control" id="t1" value="<%= referencia.tamanhos.t1 %>">
+                </div>
+                <div class="d-flex col-2">
+                    <h3 class="m-2 w-25">2:</h3>
+                    <input  type="number" class="w-75 form-control" id="t2" value="<%= referencia.tamanhos.t2 %>">
+                </div>
+                <div class="d-flex col-2">
+                    <h3 class="m-2 w-25">3:</h3>
+                    <input  type="number" class="w-75 form-control" id="t3" value="<%= referencia.tamanhos.t3 %>">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="/referencias/script_referencias.js"></script>
+<script type="text/javascript">
+    let novo = JSON.parse('<%- JSON.stringify(novo) %>')
+    let referencia = JSON.parse('<%- JSON.stringify(referencia) %>')
+</script>

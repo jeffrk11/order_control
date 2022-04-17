@@ -23,14 +23,26 @@ router.get('/referencia/listagem',(req,res,next) => {
         
     });
 })
-router.get('/edicao/referencia/:id',(req,res,next) => {
+router.get('/referencia/edicao/:id',(req,res,next) => {
     const id = parseInt(req.params.id)
-    const pedido = service.findById(id)
-    // const refs = pedido.referencias.map( e => { 
-    //     return e.referencia
-    // })
-    const referencias = ref_service.findAll()
-    //manda o pedido para o front
-    res.render(path.join(__dirname,'../../views/pedidos/cadastrar.ejs'), { pedido:pedido, referencias:referencias });
+    const referencia = service.findById(id)
+    res.render(path.join(__dirname,'../../views/partials/esqueleto.ejs'), 
+    {
+        content: '../referencias/edicao.ejs',
+        novo: false,
+        referencia: referencia
+        
+    });
+})
+router.get('/referencia/novo',(req,res,next) => {
+    
+    res.render(path.join(__dirname,'../../views/partials/esqueleto.ejs'), 
+    {
+        referencia: {
+            tamanhos: {}
+        },
+        content: '../referencias/edicao.ejs',
+        novo: true        
+    });
 })
 module.exports = router

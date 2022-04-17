@@ -4,6 +4,11 @@ module.exports = {
     insert: function(ref){
         DB.insert('referencias',ref)
     },
+    update: function(ref){
+        let referencias = DB.get('referencias')
+        referencias = referencias.map( e=>{ return e.id === ref.id ? ref : e})
+        DB.save('referencias',referencias)
+    },
     delete: function(id){
         let referencias = DB.get('referencias')
         let ped_ref = DB.get('pedidos_referencias');
