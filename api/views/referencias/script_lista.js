@@ -1,14 +1,18 @@
 //globais
 let tbody = document.getElementById('tb')
+let filtro_descricao = document.getElementById('filtro_descricao')
+let filtro_codigo = document.getElementById('filtro_id')
+let referencias_cop;
 
 //page load
 window.onload = function() {
+    referencias_cop = referencias
     draw_table()
 }
 
 function draw_table(){
     tbody.innerHTML = ''
-    referencias.forEach(referencia => {
+    referencias_cop.forEach(referencia => {
         //inserindo linha
         let tr = tbody.insertRow()
         //codigo
@@ -85,6 +89,7 @@ function deleteReferencia(id){
                         if(result.status == 200 || result.status == 201)
                             document.getElementById('txt_mensagem_modal_aviso').innerText = val;
                             referencias =  referencias.filter(e => { return e.id != id})
+                            referencias_cop = referencias
                             draw_table();
                     })
                 })
@@ -109,4 +114,38 @@ function createElement(id=null,element,className=null,innerHTML=null,type=null,c
         if(child)
             aux.appendChild(child)
     return aux;
+}
+
+filtro_descricao.addEventListener("keyup", event => {
+    filtro()
+})
+filtro_codigo.addEventListener("keyup", event => {
+    filtro()
+})
+
+function limpar_filtro(){
+    filtro_codigo.value = ''
+    filtro_descricao.value = ''
+    filtro()
+}
+
+function filtro(){
+    //reset 
+    referencias_cop = referencias
+    //filtro codigo
+    if(filtro_codigo.value){
+        referencias_cop = referencias_cop.filter( e=> {
+            return e.id == parseInt(filtro_codigo.value)
+        })
+    }
+    //filtro descricao
+    if(filtro_descricao.value){
+        referencias_cop = referencias_cop.filter( e=> {
+            return  e.descricao.toUpperCase().includes(filtro_descricao.value.toUpperCase())
+        })
+    }
+
+    if(!filtro_codigo.value && !filtro_descricao.value)
+        referencias_cop = referencias
+    draw_table();
 }

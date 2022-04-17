@@ -191,6 +191,10 @@ a {
   
 }
 
+.e-hover:hover{
+  cursor: pointer;
+}
+
 a:hover {
   color: #333;
   font-weight: bold;

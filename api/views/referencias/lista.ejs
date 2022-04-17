@@ -1,6 +1,37 @@
 <div class="d-flex flex-column w-100">
     <div class="d-flex m-2 flex-column border-5 p-4 bg-white w-100">
         <h5>Filtro</h5>
+        <div class="row">
+            <div class="p-3 col-2 text-center">
+                <i style="font-size: 2rem;" class="rounded-circle p-4 bg-cinza-claro fa-solid fa-filter color-transp-forte"></i>
+            </div>
+            <div class="col-10">
+                <div class="row  mt-2 w-100">
+                    <!-- codigo -->
+                    <div class="col-2 d-flex flex-column">
+                        <span>Código</span>
+                        <input type="number" class="form-control" id="filtro_id">
+                    </div>
+                    <!-- descricao -->
+                    <div class="col-8 d-flex flex-column">
+                        <span>Descrição</span>
+                        <input type="text" class="form-control" id="filtro_descricao">
+                    </div>
+                    <!-- limpar -->
+                    <div class="col-2 d-flex flex-column" onclick="limpar_filtro()">
+                        <span>Limpar</span>
+                        <div class="w-100 text-center e-hover">
+                            <i style="font-size: 1.6rem;" class="rounded-circle p-3 bg-vermelho-claro fa-solid fa-filter-circle-xmark color-transp-forte"></i>
+                        </div>
+                    </div>
+                    <!-- tamanho -->
+                    <!-- <div class="col d-flex flex-column">
+                        <span>Tamanho</span>
+                        <input type="text" class="form-control" id="filtro_descricao">
+                    </div> -->
+                </div>
+            </div>
+        </div>
 
     </div>
     <div class="d-flex m-2 border-5 p-4 bg-white w-100">
