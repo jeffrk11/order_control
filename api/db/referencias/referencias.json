@@ -22,5 +22,2096 @@
             "m": 10,
             "g": 10
         }
+    },
+    
+    {
+        "id": 3,
+        "descricao": "Mijão Malha P/G Est. S/Pé C/ Fundo Bco. e Color.",
+        "tipo": "MIJÃO",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "EST. S/PÉ C/ FUNDO BCO. E COLOR."
+    },
+    {
+        "id": 4,
+        "descricao": "Body M/L Ribana P/G C/Frases",
+        "tipo": "BODY",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L   C/FRASES"
+    },
+    {
+        "id": 5,
+        "descricao": "Body M/L Ribana P/G C/Termo",
+        "tipo": "BODY",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L   C/TERMO"
+    },
+    {
+        "id": 6,
+        "descricao": "Mijão Malha 1/3 Est. S/Pé C/ Fundo Bco. e Color.",
+        "tipo": "MIJÃO",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "EST. S/PÉ C/ FUNDO BCO. E COLOR."
+    },
+    {
+        "id": 7,
+        "descricao": "Mijão Plush RN/G",
+        "tipo": "MIJÃO",
+        "tecido": "PLUSH",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ""
+    },
+    {
+        "id": 8,
+        "descricao": "Mijão Malha P/G Est. C/Pé C/ Fundo Bco. e Color.",
+        "tipo": "MIJÃO",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "EST. C/PÉ C/ FUNDO BCO. E COLOR."
+    },
+    {
+        "id": 10,
+        "descricao": "Short Ribana Liso 1/3",
+        "tipo": "SHORT",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "LISO "
+    },
+    {
+        "id": 11,
+        "descricao": "Macacão soft Estamp. s/pe 1/3",
+        "tipo": "MACACÃO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "ESTAMP. S/PE "
+    },
+    {
+        "id": 12,
+        "descricao": "Camiseta M/L 1/3 Estamp.",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  ESTAMP."
+    },
+    {
+        "id": 13,
+        "descricao": "Conjunto Body M/C Frente Estamp. E Shorts Liso Sued. P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY M/C FRENTE ESTAMP. E SHORTS LISO . "
+    },
+    {
+        "id": 14,
+        "descricao": "Conjunto Body M/C Frente Estamp. E Mijão S/Pé Liso Sued. P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY M/C FRENTE ESTAMP. E MIJÃO S/PÉ LISO . "
+    },
+    {
+        "id": 15,
+        "descricao": "Camiseta M/L 1/3 Lisa",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  LISA"
+    },
+    {
+        "id": 16,
+        "descricao": "Body M/C P/G C/Saia Rib.",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  C/SAIA ."
+    },
+    {
+        "id": 17,
+        "descricao": "Mijão Sued. RN/G S/Pé Bordado Atrás",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".  S/PÉ BORDADO ATRÁS"
+    },
+    {
+        "id": 18,
+        "descricao": "Mijão Vira-Pé P/G Sued. Liso",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "VIRA-PÉ  . LISO"
+    },
+    {
+        "id": 19,
+        "descricao": "Camiseta M/C 1/3 C/ Termo",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/C  C/ TERMO"
+    },
+    {
+        "id": 20,
+        "descricao": "Body M/L C/Mangas Color. Sued.P/G Bordado Grande",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L C/MANGAS COLOR. . BORDADO GRANDE"
+    },
+    {
+        "id": 21,
+        "descricao": "Body M/C Rib. P/G C/ Termo",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C .  C/ TERMO"
+    },
+    {
+        "id": 22,
+        "descricao": "Body M/C Rib. P/G C/ Frases",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C .  C/ FRASES"
+    },
+    {
+        "id": 23,
+        "descricao": "Body M/C Sued. P/G Bordado",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C .  BORDADO"
+    },
+    {
+        "id": 24,
+        "descricao": "Body M/C Sued. P/G C/ Termo",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C .  C/ TERMO"
+    },
+    {
+        "id": 25,
+        "descricao": "Shorts Rib. Estamp. P/G",
+        "tipo": "SHORT",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S . ESTAMP. "
+    },
+    {
+        "id": 26,
+        "descricao": "Shorts Rib. Estamp. 1/3",
+        "tipo": "SHORT",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "S . ESTAMP. "
+    },
+    {
+        "id": 27,
+        "descricao": "Regata P/G C/ Termo Lisa",
+        "tipo": "REGATA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/ TERMO LISA"
+    },
+    {
+        "id": 28,
+        "descricao": "Regata 1/3 C/ Termo Lisa",
+        "tipo": "REGATA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "C/ TERMO LISA"
+    },
+    {
+        "id": 29,
+        "descricao": "Mijão Vira-Pé P/G Sued. Estamp.",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "VIRA-PÉ  . ESTAMP."
+    },
+    {
+        "id": 30,
+        "descricao": "Body M/C P/G Sued. Estamp.",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  . ESTAMP."
+    },
+    {
+        "id": 31,
+        "descricao": "Conjunto C/ Capuz Soft P/G C/ Frente Estamp.",
+        "tipo": "CONJUNTO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/ CAPUZ   C/ FRENTE ESTAMP."
+    },
+    {
+        "id": 32,
+        "descricao": "Body M/C 1/3 Sued. Estamp.",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/C  . ESTAMP."
+    },
+    {
+        "id": 33,
+        "descricao": "Camiseta M/C 1/3 Estamp.",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/C  ESTAMP."
+    },
+    {
+        "id": 34,
+        "descricao": "Body Manga Curta Reativa P/G Sued. C/Bordado Grande",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "MANGA CURTA REATIVA  . C/BORDADO GRANDE"
+    },
+    {
+        "id": 35,
+        "descricao": "Body Rib. M/L 1/3 C/ Termo",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". M/L  C/ TERMO"
+    },
+    {
+        "id": 36,
+        "descricao": "Body Rib. M/C 1/3 C/ Termo",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". M/C  C/ TERMO"
+    },
+    {
+        "id": 37,
+        "descricao": "Body Sued. M/C 1/3 C/ Termo",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". M/C  C/ TERMO"
+    },
+    {
+        "id": 38,
+        "descricao": "Body M/C P/G Sued. C/Desenho",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  . C/DESENHO"
+    },
+    {
+        "id": 39,
+        "descricao": "Body M/L Ribana P/G Estamp.",
+        "tipo": "BODY",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L   ESTAMP."
+    },
+    {
+        "id": 40,
+        "descricao": "Body Ribana M/C P/G Estamp.",
+        "tipo": "BODY",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  ESTAMP."
+    },
+    {
+        "id": 41,
+        "descricao": "Body Ribana M/L 1/3 Estamp.",
+        "tipo": "BODY",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  ESTAMP."
+    },
+    {
+        "id": 42,
+        "descricao": "Body Ribana M/C 1/3 Estamp.",
+        "tipo": "BODY",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/C  ESTAMP."
+    },
+    {
+        "id": 43,
+        "descricao": "Shorts Rib. Liso P/G",
+        "tipo": "SHORT",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S . LISO "
+    },
+    {
+        "id": 44,
+        "descricao": "Shorts Sued. Listrado P/G C/Bordado Atrás",
+        "tipo": "SHORT",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S . LISTRADO  C/BORDADO ATRÁS"
+    },
+    {
+        "id": 45,
+        "descricao": "Body Regata Rib. P/G C/ Termo",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "REGATA .  C/ TERMO"
+    },
+    {
+        "id": 46,
+        "descricao": "Body Regata Rib. P/G Estamp.",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "REGATA .  ESTAMP."
+    },
+    {
+        "id": 47,
+        "descricao": "Body M/L 1/3 Sued. C/Termo ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  . C/TERMO "
+    },
+    {
+        "id": 48,
+        "descricao": "Body M/L 1/3 Sued. C/Desenho ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  . C/DESENHO "
+    },
+    {
+        "id": 49,
+        "descricao": "Body M/L Listrado 1/3 ",
+        "tipo": "BODY",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L LISTRADO  "
+    },
+    {
+        "id": 50,
+        "descricao": "Pijama M/L 1/3 Estamp. Moletinho",
+        "tipo": "PIJAMA",
+        "tecido": "MOLETINHO",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  ESTAMP. "
+    },
+    {
+        "id": 51,
+        "descricao": "Body M/L P/G Plush C/Termo ",
+        "tipo": "BODY",
+        "tecido": "PLUSH",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L   C/TERMO "
+    },
+    {
+        "id": 52,
+        "descricao": "Pijama M/L 4/8 Estamp. Moletinho",
+        "tipo": "PIJAMA",
+        "tecido": "MOLETINHO",
+        "tamanhos": {
+            
+        },
+        "estilo": "M/L 4/8 ESTAMP. "
+    },
+    {
+        "id": 53,
+        "descricao": "Body Regata Rib. 1/3 C/ Frases",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "REGATA .  C/ FRASES"
+    },
+    {
+        "id": 54,
+        "descricao": "Body Regata Rib. 1/3 Estamp.",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "REGATA .  ESTAMP."
+    },
+    {
+        "id": 55,
+        "descricao": "Body M/L RN/G Sued. C/Desenho ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L  . C/DESENHO "
+    },
+    {
+        "id": 56,
+        "descricao": "Mijão Vira-Pé Sued. P/G c/Bordado Atras ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "VIRA-PÉ .  C/BORDADO ATRAS "
+    },
+    {
+        "id": 57,
+        "descricao": "Regata 1/3 C/ Desenho",
+        "tipo": "REGATA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "C/ DESENHO"
+    },
+    {
+        "id": 58,
+        "descricao": "Conjunto Body M/C C/Bordado e Shorts liso Sued. P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY M/C C/BORDADO E SHORTS LISO . "
+    },
+    {
+        "id": 59,
+        "descricao": "Conjunto Body M/C C/Bordado e Mijao S/Pe Sued. P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY M/C C/BORDADO E MIJAO S/PE . "
+    },
+    {
+        "id": 60,
+        "descricao": "Pijama M/L P/G Estamp. Moletinho",
+        "tipo": "PIJAMA",
+        "tecido": "MOLETINHO",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L  ESTAMP. "
+    },
+    {
+        "id": 61,
+        "descricao": "Mijão Rib. Liso S/Pé P/G C/Bordado Atras ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". LISO S/PÉ  C/BORDADO ATRAS "
+    },
+    {
+        "id": 62,
+        "descricao": "Regata P/G Estamp.",
+        "tipo": "REGATA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "ESTAMP."
+    },
+    {
+        "id": 63,
+        "descricao": "Regata 1/3 Estamp.",
+        "tipo": "REGATA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "ESTAMP."
+    },
+    {
+        "id": 64,
+        "descricao": "Body Rib. M/L RN/G C/Bordado ",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". M/L  C/BORDADO "
+    },
+    {
+        "id": 65,
+        "descricao": "Regata P/G C/ Desenho",
+        "tipo": "REGATA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/ DESENHO"
+    },
+    {
+        "id": 66,
+        "descricao": "Mijão Sued. Liso RN/G S/ Pé ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". LISO  S/ PÉ "
+    },
+    {
+        "id": 67,
+        "descricao": "Mijão Rib. Liso P/G ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". LISO  "
+    },
+    {
+        "id": 68,
+        "descricao": "Mijão Rib. Vira-Pé P/G Liso ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". VIRA-PÉ  LISO "
+    },
+    {
+        "id": 69,
+        "descricao": "Mijão Sued. Liso C/ Pé P/G ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". LISO C/ PÉ  "
+    },
+    {
+        "id": 70,
+        "descricao": "Calça Soft 1/3 Estamp.",
+        "tipo": "CALÇA",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "ESTAMP."
+    },
+    {
+        "id": 71,
+        "descricao": "Mijão Sued. Liso S/ Pé 1/3 ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". LISO S/ PÉ  "
+    },
+    {
+        "id": 72,
+        "descricao": "Shorts Sued. P/G C/Bordado Atrás",
+        "tipo": "SHORT",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S .  C/BORDADO ATRÁS"
+    },
+    {
+        "id": 73,
+        "descricao": "Body M/L Rib. 1/3 C/ Frases ",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L .  C/ FRASES "
+    },
+    {
+        "id": 74,
+        "descricao": "Body M/L RN/G Sued. C/ Frases ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L  . C/ FRASES "
+    },
+    {
+        "id": 75,
+        "descricao": "Shorts Sued. Estamp. P/G",
+        "tipo": "SHORT",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S . ESTAMP. "
+    },
+    {
+        "id": 76,
+        "descricao": "Mijão P/G Rib. Estamp. ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". ESTAMP. "
+    },
+    {
+        "id": 77,
+        "descricao": "Mijão 1/3 Rib. Estamp. ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". ESTAMP. "
+    },
+    {
+        "id": 78,
+        "descricao": "Body Regata P/G Sued. C/Desenho",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "REGATA  . C/DESENHO"
+    },
+    {
+        "id": 79,
+        "descricao": "Mijão Rib. Liso 1/3 ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". LISO  "
+    },
+    {
+        "id": 80,
+        "descricao": "Body M/L 1/3 Sued. C/Frases ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  . C/FRASES "
+    },
+    {
+        "id": 81,
+        "descricao": "Mijão Malha RN/G Liso ",
+        "tipo": "MIJÃO",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "LISO "
+    },
+    {
+        "id": 82,
+        "descricao": "Mijão Sued. Estamp. 1/3 S/Pé ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". ESTAMP.  S/PÉ "
+    },
+    {
+        "id": 83,
+        "descricao": "Mijão Sued. Estamp. P/G S/Pé ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". ESTAMP.  S/PÉ "
+    },
+    {
+        "id": 84,
+        "descricao": "Body M/L Sued. Estamp. P/G ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L . ESTAMP.  "
+    },
+    {
+        "id": 85,
+        "descricao": "Body M/L Sued. Estamp. 1/3 ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L . ESTAMP.  "
+    },
+    {
+        "id": 86,
+        "descricao": "Mijão C/ Pé Rib. Liso P/G ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/ PÉ . LISO  "
+    },
+    {
+        "id": 87,
+        "descricao": "Mijão C/ Pé Rib. Estamp. RN/G ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/ PÉ . ESTAMP.  "
+    },
+    {
+        "id": 88,
+        "descricao": "Mijão C/ Pé Sued. Estamp. RN/G ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/ PÉ . ESTAMP.  "
+    },
+    {
+        "id": 89,
+        "descricao": "Calça Soft P/G Estamp. ",
+        "tipo": "CALÇA",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "ESTAMP. "
+    },
+    {
+        "id": 90,
+        "descricao": "Calça Soft P/G Lisa",
+        "tipo": "CALÇA",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "LISA"
+    },
+    {
+        "id": 91,
+        "descricao": "Mijão Rib. Vira-Pé P/G Estamp.",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". VIRA-PÉ  ESTAMP."
+    },
+    {
+        "id": 92,
+        "descricao": "Conjunto Soft P/G Estamp.",
+        "tipo": "CONJUNTO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "ESTAMP."
+    },
+    {
+        "id": 93,
+        "descricao": "Conjunto Soft 1/3 Estamp.",
+        "tipo": "CONJUNTO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "ESTAMP."
+    },
+    {
+        "id": 94,
+        "descricao": "Body Rib. M/L RN/G C/Desenho ",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". M/L  C/DESENHO "
+    },
+    {
+        "id": 95,
+        "descricao": "Body M/C Sued. P/G C/ Frases",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C .  C/ FRASES"
+    },
+    {
+        "id": 96,
+        "descricao": "Body M/C 1/3 Sued. C/ Desenho",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/C  . C/ DESENHO"
+    },
+    {
+        "id": 97,
+        "descricao": "Body Regata 1/3 Sued. C/Desenho",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "REGATA  . C/DESENHO"
+    },
+    {
+        "id": 98,
+        "descricao": "Body Regata P/G Sued. Estamp.",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "REGATA  . ESTAMP."
+    },
+    {
+        "id": 99,
+        "descricao": "Body Regata 1/3 Sued. Estamp.",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "REGATA  . ESTAMP."
+    },
+    {
+        "id": 100,
+        "descricao": "Camiseta M/C Malha 1/3 C/ Desenho",
+        "tipo": "CAMISETA",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/C   C/ DESENHO"
+    },
+    {
+        "id": 101,
+        "descricao": "Macacão Sued. RN/G Estamp. Vira-Pé",
+        "tipo": "MACACÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".  ESTAMP. VIRA-PÉ"
+    },
+    {
+        "id": 102,
+        "descricao": "Mijao Rib. RN/G C/Pé e Bordado Atras",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "MIJAO .  C/PÉ E BORDADO ATRAS"
+    },
+    {
+        "id": 103,
+        "descricao": "Shorts Sued. P/G Liso",
+        "tipo": "SHORT",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S .  LISO"
+    },
+    {
+        "id": 104,
+        "descricao": "Body Regata Rib. 1/3 Liso",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "REGATA .  LISO"
+    },
+    {
+        "id": 105,
+        "descricao": "Mijao Sued. P/G C/Pé Bordado Atras ",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "MIJAO .  C/PÉ BORDADO ATRAS "
+    },
+    {
+        "id": 107,
+        "descricao": "Shorts Rib. P/G C/Bordado Atrás",
+        "tipo": "SHORT",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S .  C/BORDADO ATRÁS"
+    },
+    {
+        "id": 108,
+        "descricao": "Body M/C P/G Costa Lisa Frente Estamp. Sued.",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  COSTA LISA FRENTE ESTAMP. ."
+    },
+    {
+        "id": 109,
+        "descricao": "Macacão Soft Estamp. Vira-Pé P/G",
+        "tipo": "MACACÃO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "ESTAMP. VIRA-PÉ "
+    },
+    {
+        "id": 110,
+        "descricao": "Conjunto Body M/C Frente Estamp. C/ Mijão S/Pé Rib. Liso P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY M/C FRENTE ESTAMP. C/ MIJÃO S/PÉ . LISO "
+    },
+    {
+        "id": 111,
+        "descricao": "Conjunto Body M/C Frente Estamp. C/ Shorts Rib. Liso P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY M/C FRENTE ESTAMP. C/ SHORTS . LISO "
+    },
+    {
+        "id": 112,
+        "descricao": "Body macacão Soft P/G ",
+        "tipo": "MACACÃO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY    "
+    },
+    {
+        "id": 114,
+        "descricao": "Body Plush P/G M/L C/ Bordado ",
+        "tipo": "BODY",
+        "tecido": "PLUSH",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L C/ BORDADO "
+    },
+    {
+        "id": 115,
+        "descricao": "Conjunto C/ Capuz Soft 1/3 C/ Frente Estamp. ",
+        "tipo": "CONJUNTO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "C/ CAPUZ   C/ FRENTE ESTAMP. "
+    },
+    {
+        "id": 116,
+        "descricao": "Body M/L Rib. RN/G C/Bordado ",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L .  C/BORDADO "
+    },
+    {
+        "id": 117,
+        "descricao": "Body M/C Rib. P/G C/Bordado",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C .  C/BORDADO"
+    },
+    {
+        "id": 118,
+        "descricao": "Mijão Rib. RN/G C/Bordado ",
+        "tipo": "MIJÃO",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".  C/BORDADO "
+    },
+    {
+        "id": 119,
+        "descricao": "Body M/L Sued. P/G C/Bordado ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L .  C/BORDADO "
+    },
+    {
+        "id": 120,
+        "descricao": "Body Regata Rib. P/G C/ Frases",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "REGATA .  C/ FRASES"
+    },
+    {
+        "id": 121,
+        "descricao": "Body M/C Sued. P/G C/Bordado",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C .  C/BORDADO"
+    },
+    {
+        "id": 122,
+        "descricao": "Shorts Sued. Estamp. 1/3",
+        "tipo": "SHORT",
+        "tecido": "SUED",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "S . ESTAMP. "
+    },
+    {
+        "id": 124,
+        "descricao": "Shorts Rib. 1/3 C/Bordado Atrás",
+        "tipo": "SHORT",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "S .  C/BORDADO ATRÁS"
+    },
+    {
+        "id": 125,
+        "descricao": "Macacão Soft P/G Estamp. S/Pé",
+        "tipo": "MACACÃO",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "ESTAMP. S/PÉ"
+    },
+    {
+        "id": 126,
+        "descricao": "Body M/C P/G C/ Desenho C/Manga Colorida Rib.",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  C/ DESENHO C/MANGA COLORIDA ."
+    },
+    {
+        "id": 127,
+        "descricao": "Body M/C P/G Rib. C/Desenho",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  . C/DESENHO"
+    },
+    {
+        "id": 128,
+        "descricao": "Conj. Body M/L Sued.Costa lisa F.Estamp. E Mijão Sued. Liso P/G S/Pé ",
+        "tipo": "CONJ",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/L .COSTA LISA F.ESTAMP. E MIJÃO SUED. LISO  S/PÉ "
+    },
+    {
+        "id": 129,
+        "descricao": "Conj. Body M/L Sued.Costa lisa F.Estamp. E Mijão Sued. Liso Vira-Pé P/G ",
+        "tipo": "CONJ",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/L .COSTA LISA F.ESTAMP. E MIJÃO SUED. LISO VIRA-PÉ  "
+    },
+    {
+        "id": 130,
+        "descricao": "Conj. Body M/L Rib.C/Termo e Mijão Ribana Vira-Pé RN/G Liso ",
+        "tipo": "CONJ",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/L RIB.C/TERMO E MIJÃO  VIRA-PÉ  LISO "
+    },
+    {
+        "id": 131,
+        "descricao": "Conj. Body M/L Rib.C/Frases e Mijão Rib. Vira-Pé RN/G liso ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/L .C/FRASES E MIJÃO RIB. VIRA-PÉ  LISO "
+    },
+    {
+        "id": 132,
+        "descricao": "Conj. Body Rib. M/L C/Bordado e Mijão Rib. Vira-Pé RN/G liso ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY . M/L C/BORDADO E MIJÃO RIB. VIRA-PÉ  LISO "
+    },
+    {
+        "id": 133,
+        "descricao": "Conj. Body Rib. M/L C/Bordado e Mijão Ribana Liso RN/G ",
+        "tipo": "CONJ",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY RIB. M/L C/BORDADO E MIJÃO  LISO  "
+    },
+    {
+        "id": 134,
+        "descricao": "Camiseta M/L 1/3 C/Frases",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  C/FRASES"
+    },
+    {
+        "id": 135,
+        "descricao": "Camiseta M/L 1/3 C/Frases (Cores reativas) ",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  C/FRASES (CORES REATIVAS) "
+    },
+    {
+        "id": 136,
+        "descricao": "Camiseta M/L 1/3 C/Termo (Cores reativas) ",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/L  C/TERMO (CORES REATIVAS) "
+    },
+    {
+        "id": 137,
+        "descricao": "Conj. Plush Body M/L RN/G C/Bordado e Mijão S/Pé ",
+        "tipo": "CONJ",
+        "tecido": "PLUSH",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".  BODY M/L  C/BORDADO E MIJÃO S/PÉ "
+    },
+    {
+        "id": 138,
+        "descricao": "Conj. Plush Body M/L RN/G C/Termo e Mijão S/Pé ",
+        "tipo": "CONJ",
+        "tecido": "PLUSH",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".  BODY M/L  C/TERMO E MIJÃO S/PÉ "
+    },
+    {
+        "id": 139,
+        "descricao": "Conj. Body M/C Rib. Lisa C/ Bordado e Shorts Liso 1/3",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". BODY M/C . LISA C/ BORDADO E SHORTS LISO "
+    },
+    {
+        "id": 140,
+        "descricao": "Conj. Body M/C Rib. Lisa C/Frases e Shorts Liso 1/3",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". BODY M/C . LISA C/FRASES E SHORTS LISO "
+    },
+    {
+        "id": 141,
+        "descricao": "Conj. Body M/C Rib. Estamp. e Shorts Liso 1/3",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". BODY M/C . ESTAMP. E SHORTS LISO "
+    },
+    {
+        "id": 142,
+        "descricao": "Conj. Body M/L Rib. Estamp. e Mijão Liso S/Pé 1/3 ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". BODY M/L . ESTAMP. E MIJÃO LISO S/PÉ  "
+    },
+    {
+        "id": 143,
+        "descricao": "Conj. Body M/L Sued. Bord. manga colorida ",
+        "tipo": "CONJ",
+        "tecido": "SUED",
+        "tamanhos": {
+            
+        },
+        "estilo": ". BODY M/L . BORD. MANGA COLORIDA "
+    },
+    {
+        "id": 144,
+        "descricao": "Regata P/G Malha C/Frases",
+        "tipo": "REGATA",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/FRASES"
+    },
+    {
+        "id": 145,
+        "descricao": "Regata 1/3 Malha C/Frases",
+        "tipo": "REGATA",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "C/FRASES"
+    },
+    {
+        "id": 146,
+        "descricao": "Conj. Body M/L Rib.C/Frente Est. Costa Lisa e Mijao Liso S/Pe P/G ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/L .C/FRENTE EST. COSTA LISA E MIJAO LISO S/PE  "
+    },
+    {
+        "id": 147,
+        "descricao": "Conj. Body M/L Rib. Liso e Mijao Liso S/Pe RN/G ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/L . LISO E MIJAO LISO S/PE  "
+    },
+    {
+        "id": 148,
+        "descricao": "Conj. Body M/L Rib. C/Frases e Mijao Liso S/Pé RN/G ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/L . C/FRASES E MIJAO LISO S/PÉ  "
+    },
+    {
+        "id": 149,
+        "descricao": "Body M/C Rib. C/Bordado ",
+        "tipo": "BODY",
+        "tecido": "RIB",
+        "tamanhos": {
+            
+        },
+        "estilo": "M/C . C/BORDADO "
+    },
+    {
+        "id": 150,
+        "descricao": "Body M/L Sued. Costa Lisa Frente Estamp. P/G ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L . COSTA LISA FRENTE ESTAMP.  "
+    },
+    {
+        "id": 151,
+        "descricao": "Conj.Body M/C RN/G C/Bordado e Shorts Liso Rib.",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".BODY M/C  C/BORDADO E SHORTS LISO ."
+    },
+    {
+        "id": 152,
+        "descricao": "Conj. Body M/C RN/G Estamp. e Shorts Liso Rib.",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/C  ESTAMP. E SHORTS LISO ."
+    },
+    {
+        "id": 153,
+        "descricao": "Camiseta M/C 1/3 C/Frases",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "M/C  C/FRASES"
+    },
+    {
+        "id": 155,
+        "descricao": "Conj. Body M/C C/Frases e Shorts Rib. Liso P/G",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". BODY M/C C/FRASES E SHORTS . LISO "
+    },
+    {
+        "id": 156,
+        "descricao": "Conj. Sued M/C Frente Reativa Estamp. E Shorts Liso RN/G",
+        "tipo": "CONJ",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".  M/C FRENTE REATIVA ESTAMP. E SHORTS LISO "
+    },
+    {
+        "id": 157,
+        "descricao": "Body M/L Sued. Listrado degradee P/G ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L . LISTRADO DEGRADEE  "
+    },
+    {
+        "id": 158,
+        "descricao": "Body M/C Sued. Listrado degradee P/G",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C . LISTRADO DEGRADEE "
+    },
+    {
+        "id": 159,
+        "descricao": "Macacão Malha RN/G C/Frente Estamp. Costa Lisa e Mijão Vira-Pé",
+        "tipo": "MIJÃO",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "MACACÃO   C/FRENTE ESTAMP. COSTA LISA E  VIRA-PÉ"
+    },
+    {
+        "id": 160,
+        "descricao": "Body M/C Sued. Listrado RN/G",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C . LISTRADO "
+    },
+    {
+        "id": 161,
+        "descricao": "Body M/L Sued. Listrado RN/G ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/L . LISTRADO  "
+    },
+    {
+        "id": 162,
+        "descricao": "Conj. Body Rib. M/L Estamp. e Mijão Sem Pé Estamp. 1/3 ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". BODY . M/L ESTAMP. E MIJÃO SEM PÉ ESTAMP.  "
+    },
+    {
+        "id": 163,
+        "descricao": "Conj. Body Rib. M/L Liso e Mijão Liso 1/3 ",
+        "tipo": "CONJ",
+        "tecido": "RIB",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ". BODY . M/L LISO E MIJÃO LISO  "
+    },
+    {
+        "id": 164,
+        "descricao": "Camiseta M/C 4/8 Reativa",
+        "tipo": "CAMISETA",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            
+        },
+        "estilo": "M/C 4/8 REATIVA"
+    },
+    {
+        "id": 165,
+        "descricao": "Mijão Sued. Listrado Vira-Pé RN/G ",
+        "tipo": "MIJÃO",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". LISTRADO VIRA-PÉ  "
+    },
+    {
+        "id": 166,
+        "descricao": "Shorts Sued. Listrado P/G",
+        "tipo": "SHORT",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S . LISTRADO "
+    },
+    {
+        "id": 167,
+        "descricao": "Mijão Malha RN/G C/Pé liso ",
+        "tipo": "MIJÃO",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "C/PÉ LISO "
+    },
+    {
+        "id": 168,
+        "descricao": "Conj. Soft Estamp. P/G C/Capuz ",
+        "tipo": "CONJ",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ".  ESTAMP.  C/CAPUZ "
+    },
+    {
+        "id": 169,
+        "descricao": "Body Sued. M/L RN/G liso (Cores reativas) ",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": ". M/L  LISO (CORES REATIVAS) "
+    },
+    {
+        "id": 170,
+        "descricao": "Conj. Soft Estamp. 1/3 C/Capuz ",
+        "tipo": "CONJ",
+        "tecido": "SOFT",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": ".  ESTAMP.  C/CAPUZ "
+    },
+    {
+        "id": 171,
+        "descricao": "Shorts Malha P/G Estamp. (Cores reativas)",
+        "tipo": "SHORT",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "S   ESTAMP. (CORES REATIVAS)"
+    },
+    {
+        "id": 172,
+        "descricao": "Body Malha M/C RN/G Estamp. C/Elastano",
+        "tipo": "BODY",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  ESTAMP. C/ELASTANO"
+    },
+    {
+        "id": 173,
+        "descricao": "Mijão Malha Estampado RN/G Vira-Pé ",
+        "tipo": "MIJÃO",
+        "tecido": "MALHA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "ESTAMPADO  VIRA-PÉ "
+    },
+    {
+        "id": 174,
+        "descricao": "Conjunto Body Regata e Shorts Listrado P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY REGATA E SHORTS LISTRADO "
+    },
+    {
+        "id": 175,
+        "descricao": "Conjunto Body M/C e Shorts Listrado P/G",
+        "tipo": "CONJUNTO",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "BODY M/C E SHORTS LISTRADO "
+    },
+    {
+        "id": 176,
+        "descricao": "Mijão MM Sem Pé 1/3 ",
+        "tipo": "MIJÃO",
+        "tecido": "OUTROS",
+        "tamanhos": {
+            "t1": 0,
+            "t2": 0,
+            "t3": 0
+        },
+        "estilo": "MM SEM PÉ  "
+    },
+    {
+        "id": 177,
+        "descricao": "Body M/C Ribana Reativo RN/G",
+        "tipo": "BODY",
+        "tecido": "RIBANA",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C  REATIVO "
+    },
+    {
+        "id": 178,
+        "descricao": "Body M/C Sued. Silk C/Frases RN/G",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "rn": 0,
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "M/C . SILK C/FRASES "
+    },
+    {
+        "id": 179,
+        "descricao": "Body Reg. Sued. Listrado P/G",
+        "tipo": "BODY",
+        "tecido": "SUED",
+        "tamanhos": {
+            "p": 0,
+            "m": 0,
+            "g": 0
+        },
+        "estilo": "REG. . LISTRADO "
     }
+    
 ]

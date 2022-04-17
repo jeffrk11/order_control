@@ -1,5 +1,121 @@
 [
     {
+        "id_pedido": 6,
+        "id_referencia": 1,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "m": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "g": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            }
+        },
+        "referencia": {
+            "id": 1,
+            "descricao": "Body M/L Suedine P/G Bordado",
+            "tipo": "BODY",
+            "estilo": "BORDADO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 10,
+                "m": 20,
+                "g": 30
+            }
+        }
+    },
+    {
+        "id_pedido": 6,
+        "id_referencia": 2,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "m": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "g": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            }
+        },
+        "referencia": {
+            "id": 2,
+            "descricao": "Body M/L Suedine P/G C/ Termo",
+            "tipo": "BODY",
+            "estilo": "TERMO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 10,
+                "m": 10,
+                "g": 10
+            }
+        }
+    },
+    {
+        "id_pedido": 7,
+        "id_referencia": 1,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": "10",
+                "quantidade_final": "0"
+            },
+            "m": {
+                "quantidade_pedido": "10",
+                "quantidade_final": "0"
+            },
+            "g": {
+                "quantidade_pedido": "10",
+                "quantidade_final": "0"
+            }
+        },
+        "referencia": {
+            "id": 1,
+            "descricao": "Body M/L Suedine P/G Bordado",
+            "tipo": "BODY",
+            "estilo": "BORDADO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 10,
+                "m": 20,
+                "g": 30
+            }
+        }
+    },
+    {
+        "id_pedido": 7,
+        "id_referencia": 2,
+        "tamanhos": {
+            "p": {
+                "quantidade_pedido": "10",
+                "quantidade_final": "0"
+            },
+            "m": {
+                "quantidade_pedido": "10",
+                "quantidade_final": "0"
+            }
+        },
+        "referencia": {
+            "id": 2,
+            "descricao": "Body M/L Suedine P/G C/ Termo",
+            "tipo": "BODY",
+            "estilo": "TERMO",
+            "tecido": "SUEDINE",
+            "tamanhos": {
+                "p": 10,
+                "m": 10,
+                "g": 10
+            }
+        }
+    },
+    {
         "id_pedido": 1,
         "id_referencia": 1,
         "tamanhos": {
@@ -31,18 +147,6 @@
                 "quantidade_pedido": "13",
                 "quantidade_final": "14"
             }
-        },
-        "referencia": {
-            "id": 1,
-            "descricao": "Body M/L Suedine P/G Bordado",
-            "tipo": "BODY",
-            "estilo": "BORDADO",
-            "tecido": "SUEDINE",
-            "tamanhos": {
-                "p": 10,
-                "m": 20,
-                "g": 30
-            }
         }
     },
     {
@@ -61,23 +165,11 @@
                 "quantidade_pedido": 0,
                 "quantidade_final": 0
             }
-        },
-        "referencia": {
-            "id": 2,
-            "descricao": "Body M/L Suedine P/G C/ Termo",
-            "tipo": "BODY",
-            "estilo": "TERMO",
-            "tecido": "SUEDINE",
-            "tamanhos": {
-                "p": 10,
-                "m": 10,
-                "g": 10
-            }
         }
     },
     {
-        "id_pedido": 6,
-        "id_referencia": 1,
+        "id_pedido": 1,
+        "id_referencia": 23,
         "tamanhos": {
             "p": {
                 "quantidade_pedido": 0,
@@ -91,23 +183,11 @@
                 "quantidade_pedido": 0,
                 "quantidade_final": 0
             }
-        },
-        "referencia": {
-            "id": 1,
-            "descricao": "Body M/L Suedine P/G Bordado",
-            "tipo": "BODY",
-            "estilo": "BORDADO",
-            "tecido": "SUEDINE",
-            "tamanhos": {
-                "p": 10,
-                "m": 20,
-                "g": 30
-            }
         }
     },
     {
-        "id_pedido": 6,
-        "id_referencia": 2,
+        "id_pedido": 1,
+        "id_referencia": 16,
         "tamanhos": {
             "p": {
                 "quantidade_pedido": 0,
@@ -121,49 +201,95 @@
                 "quantidade_pedido": 0,
                 "quantidade_final": 0
             }
-        },
-        "referencia": {
-            "id": 2,
-            "descricao": "Body M/L Suedine P/G C/ Termo",
-            "tipo": "BODY",
-            "estilo": "TERMO",
-            "tecido": "SUEDINE",
-            "tamanhos": {
-                "p": 10,
-                "m": 10,
-                "g": 10
+        }
+    },
+    {
+        "id_pedido": 1,
+        "id_referencia": 145,
+        "tamanhos": {
+            "t1": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "t2": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "t3": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
             }
         }
     },
     {
-        "id_pedido": 7,
-        "id_referencia": 1,
+        "id_pedido": 1,
+        "id_referencia": 30,
         "tamanhos": {
             "p": {
-                "quantidade_pedido": "10",
-                "quantidade_final": "0"
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
             },
             "m": {
-                "quantidade_pedido": "10",
-                "quantidade_final": "0"
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
             },
             "g": {
-                "quantidade_pedido": "10",
-                "quantidade_final": "0"
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
             }
         }
     },
     {
-        "id_pedido": 7,
-        "id_referencia": 2,
+        "id_pedido": 1,
+        "id_referencia": 31,
         "tamanhos": {
             "p": {
-                "quantidade_pedido": "10",
-                "quantidade_final": "0"
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
             },
             "m": {
-                "quantidade_pedido": "10",
-                "quantidade_final": "0"
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "g": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            }
+        }
+    },
+    {
+        "id_pedido": 1,
+        "id_referencia": 32,
+        "tamanhos": {
+            "t1": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "t2": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "t3": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            }
+        }
+    },
+    {
+        "id_pedido": 1,
+        "id_referencia": 33,
+        "tamanhos": {
+            "t1": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "t2": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
+            },
+            "t3": {
+                "quantidade_pedido": 0,
+                "quantidade_final": 0
             }
         }
     }
